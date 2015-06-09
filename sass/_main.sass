@@ -1,7 +1,9 @@
 // Normally mainpage styles
 .out
 	position: relative
-	padding-top: 200px
+	padding-top: 160px
+	&.out_index
+		padding-top: 110px 
 .header
 	position: fixed
 	top: 0
@@ -69,16 +71,63 @@
 
 // schools
 .schools
-	height: 284px
 	.schools__list
 		font-size: 0
 		overflow: hidden
-		height: 200px 
-		//white-space: nowrap
+		margin-left: -150px 
 	.schools__item
+		position: relative
 		float: left
+		min-height: 284px
 		margin-left: 80px
-		font-size: 14px
-		width: 300px 	
+		padding: 110px 0 
+		font-size: 14px	
 		&:first-child
-			margin-left: 0 	
+			margin-left: 0
+		&.triangle
+			width: 340px 
+			padding-left: 150px
+	.schools__in
+		position: relative
+		z-index: 2		
+	.schools__counter
+		margin-bottom: 40px
+		font-size: 10px
+		color: #333
+		letter-spacing: 1px
+	.schools__title
+		font-size: 30px
+		+hb
+		color: #333
+		.arrow
+			margin-left: 20px
+	.triangle1, .triangle2, .triangle3
+		position: absolute
+		top: 50%
+		left: 50%
+		-webkit-transform-origin: 50% 50%
+		transform-origin: 50% 50%
+	.triangle1
+		width: 224px
+		height: 218px 
+		margin: -78px 0 0 -72px 
+		background: url(../img/svg/polygon-1.svg) 
+		+animation(rotation 8s linear infinite)				 				
+	.triangle2
+		width: 217px
+		height: 229px 
+		margin: -107px 0 0 -62px 
+		background: url(../img/svg/polygon-2.svg)
+		+animation(rotation 8.15s linear infinite)	
+	.triangle3
+		width: 243px
+		height: 279px 
+		margin: -149px 0 0 -90px 
+		background: url(../img/svg/polygon-3.svg)
+		+animation(rotation 8.3s linear infinite)	
+
++keyframes(rotation)
+	from
+		+rotate(0)
+	to
+		+rotate(360)			

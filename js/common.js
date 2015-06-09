@@ -1,17 +1,14 @@
 head.ready(function() {
 
 	// mCustomScrollbar
-
-	//$.mCustomScrollbar.defaults.scrollButtons.enable = false;
-	$('.schools__list').mCustomScrollbar({
-		axis: 'x',
-		advanced:{ autoExpandHorizontalScroll:true,
-		 scrollEasing: "linear"
-		},
-		mouseWheel:{ preventDefault: true },
-		autoHideScrollbar: true
+	$(window).load(function(){
+		$('.schools__list').mCustomScrollbar({
+			axis: 'x',
+			advanced:{ autoExpandHorizontalScroll:true
+			},
+			mouseWheel:{ preventDefault: true }
+		});            
 	});
-	
 
 	// horizontal sliders on main page
 	function horSliderWidth() {

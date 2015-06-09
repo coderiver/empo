@@ -1,0 +1,19 @@
+<!-- Generator: Avocode 2.1.0 - http://avocode.com -->
+<svg height="279" width="243" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 243 279">
+    <defs>
+        <linearGradient y2="0%" y1="100%" x2="0%" x1="0%" id="gradient-1">
+            <stop stop-color="#e45f9c" offset="0%" />
+            <stop stop-color="#ffc3ab" offset="100%" />
+        </linearGradient>
+        <filter height="200%" width="200%" y="-50%" x="-50%" id="filter-2">
+            <feOffset result="shadowOffset1" in="SourceAlpha" dy="4.3" dx="2.5" />
+            <feGaussianBlur result="shadowBlur1" in="shadowOffset1" stdDeviation="20" />
+            <feColorMatrix result="shadowMatrix1" in="shadowBlur1" type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0   0 0 0 0.15 0" />
+            <feMerge>
+                <feMergeNode in="shadowMatrix1" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+    <path filter="url(#filter-2)" fill="url(#gradient-1)" d="M 198 190 L 135.22 7.75 L 8.78 153.25 L 198 190 Z" />
+</svg>

@@ -160,6 +160,8 @@ x-axis
 		right: 0;
 		bottom: 0;
 		left: 0;
+		visibility: hidden;
+		pointer-events: none;
 	}
 
 	.mCustomScrollBox + .mCSB_scrollTools.mCSB_scrollTools_horizontal,

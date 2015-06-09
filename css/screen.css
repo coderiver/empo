@@ -20,9 +20,76 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
+a { text-decoration: none; }
 
-.l { *zoom: 1; }
-.l:after { content: " "; display: table; clear: both; }
-.l .l-col1 { float: left; width: 20%; }
-.l .l-col2 { float: right; width: 70%; }
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+*:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+@font-face { font-family: HelveticaNeueCyrRoman; src: url("fonts/HelveticaNeueCyrRoman.eot"); src: url("fonts/HelveticaNeueCyrRoman.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueCyrRoman.woff2") format("woff2"), url("fonts/HelveticaNeueCyrRoman.woff") format("woff"), url("fonts/HelveticaNeueCyrRoman.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: HelveticaNeueCyrBold; src: url("fonts/HelveticaNeueCyrBold.eot"); src: url("fonts/HelveticaNeueCyrBold.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueCyrBold.woff2") format("woff2"), url("fonts/HelveticaNeueCyrBold.woff") format("woff"), url("fonts/HelveticaNeueCyrBold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+body { min-width: 1366px; font-family: "HelveticaNeueCyrRoman"; font-size: 14px; line-height: 1.4; }
+
+.link { position: relative; display: inline-block; padding: 2px 0; font-size: 12px; text-transform: uppercase; color: #333; }
+.link:before { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: #efcedd; -moz-transition: height 200ms; -o-transition: height 200ms; -webkit-transition: height 200ms; transition: height 200ms; z-index: -1; }
+.link:hover:before { height: 50%; }
+
+.center { max-width: 1366px; padding: 0 35px; margin: 0 auto; }
+
+.row { *zoom: 1; }
+.row:after { content: " "; display: table; clear: both; }
+
+.col1 { float: left; min-height: 1px; width: 8.33333%; }
+
+.col2 { float: left; min-height: 1px; width: 16.66667%; }
+
+.col3 { float: left; min-height: 1px; width: 25%; }
+
+.col4 { float: left; min-height: 1px; width: 33.33333%; }
+
+.col5 { float: left; min-height: 1px; width: 41.66667%; }
+
+.col6 { float: left; min-height: 1px; width: 50%; }
+
+.col7 { float: left; min-height: 1px; width: 58.33333%; }
+
+.col8 { float: left; min-height: 1px; width: 66.66667%; }
+
+.col9 { float: left; min-height: 1px; width: 75%; }
+
+.col10 { float: left; min-height: 1px; width: 83.33333%; }
+
+.col11 { float: left; min-height: 1px; width: 91.66667%; }
+
+.col12 { float: left; min-height: 1px; width: 100%; }
+
+.out { position: relative; padding-top: 200px; }
+
+.header { position: fixed; top: 0; left: 0; right: 0; min-width: 1366px; padding: 56px 35px 0; }
+.header .header__in { max-width: 1296px; margin: 0 auto; }
+.header .header__tools { position: relative; }
+
+.phone { position: absolute; top: -30px; right: 0; }
+.phone a { font-size: 12px; color: #333; letter-spacing: 1px; }
+
+.menu .menu__list { *zoom: 1; }
+.menu .menu__list:after { content: " "; display: table; clear: both; }
+.menu .menu__list li { float: left; margin-left: 50px; }
+.menu .menu__list li:first-child { margin-left: 0; }
+
+.lang { float: right; margin-right: 25px; }
+
+.user { float: right; }
+.user .user__logged { display: inline-block; color: #aaa; font-size: 12px; }
+.user .user__logged span { color: #333; text-transform: uppercase; }
+.user .user__logout { display: inline-block; margin-left: 25px; }
+
+.logo { position: fixed; left: 56px; top: 275px; }
+.logo a { position: relative; display: inline-block; padding: 38px 0 0 103px; color: #ab004e; font-size: 10px; text-transform: uppercase; }
+.logo a:before { content: ""; position: absolute; top: 0; left: 0; width: 97px; height: 34px; background: #ab004e url(../img/svg/logo.svg) 5px 5px no-repeat; }
+
+.schools { height: 284px; }
+.schools .schools__list { font-size: 0; overflow: hidden; height: 200px; }
+.schools .schools__item { float: left; margin-left: 80px; font-size: 14px; width: 300px; }
+.schools .schools__item:first-child { margin-left: 0; }

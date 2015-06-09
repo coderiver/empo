@@ -1,1 +1,84 @@
 // Normally mainpage styles
+.out
+	position: relative
+	padding-top: 200px
+.header
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	min-width: 1366px
+	padding: 56px 35px 0
+	.header__in
+		max-width: 1296px
+		margin: 0 auto 
+	.header__tools
+		position: relative
+.phone
+	position: absolute
+	top: -30px
+	right: 0
+	a
+		font-size: 12px
+		color: #333
+		letter-spacing: 1px	
+// menu
+.menu
+	.menu__list
+		+clr
+		li
+			float: left
+			margin-left: 50px
+			&:first-child
+				margin-left: 0
+.lang
+	float: right
+	margin-right: 25px
+.user
+	float: right
+	.user__logged
+		display: inline-block
+		color: #aaa
+		font-size: 12px
+		span
+			color: #333
+			text-transform: uppercase
+	.user__logout
+		display: inline-block
+		margin-left: 25px
+		
+.logo
+	position: fixed
+	left: 56px
+	top: 275px									
+	a
+		position: relative
+		display: inline-block
+		padding: 38px 0 0 103px 
+		color: #ab004e
+		font-size: 10px
+		text-transform: uppercase
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			width: 97px
+			height: 34px
+			background: #ab004e url(../img/svg/logo.svg) 5px 5px no-repeat
+
+// schools
+.schools
+	height: 284px
+	.schools__list
+		font-size: 0
+		overflow: hidden
+		height: 200px 
+		//white-space: nowrap
+	.schools__item
+		float: left
+		margin-left: 80px
+		font-size: 14px
+		width: 300px 	
+		&:first-child
+			margin-left: 0 	

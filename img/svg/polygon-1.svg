@@ -1,19 +1,24 @@
-<!-- Generator: Avocode 2.1.0 - http://avocode.com -->
-<svg height="279" width="243" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 243 279">
-    <defs>
-        <linearGradient y2="0%" y1="100%" x2="0%" x1="0%" id="gradient-1">
-            <stop stop-color="#e45f9c" offset="0%" />
-            <stop stop-color="#ffc3ab" offset="100%" />
-        </linearGradient>
-        <filter height="200%" width="200%" y="-50%" x="-50%" id="filter-2">
-            <feOffset result="shadowOffset1" in="SourceAlpha" dy="4.3" dx="2.5" />
-            <feGaussianBlur result="shadowBlur1" in="shadowOffset1" stdDeviation="20" />
-            <feColorMatrix result="shadowMatrix1" in="shadowBlur1" type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0   0 0 0 0.15 0" />
-            <feMerge>
-                <feMergeNode in="shadowMatrix1" />
-                <feMergeNode in="SourceGraphic" />
-            </feMerge>
-        </filter>
-    </defs>
-    <path filter="url(#filter-2)" fill="url(#gradient-1)" d="M 198 190 L 135.22 7.75 L 8.78 153.25 L 198 190 Z" />
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-184 257 225 225" enable-background="new -184 257 225 225" xml:space="preserve">
+<filter  width="200%" x="-50%" id="filter-2" y="-50%" height="200%">
+	<feOffset  in="SourceAlpha" dy="4.3" dx="2.5" result="shadowOffset1"></feOffset>
+	<feGaussianBlur  in="shadowOffset1" stdDeviation="20" result="shadowBlur1"></feGaussianBlur>
+	
+		<feColorMatrix  in="shadowBlur1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0   0 0 0 0.15 0" type="matrix" result="shadowMatrix1">
+		</feColorMatrix>
+	<feMerge>
+		<feMergeNode  in="shadowMatrix1"></feMergeNode>
+		<feMergeNode  in="SourceGraphic"></feMergeNode>
+	</feMerge>
+</filter>
+<g filter="url(#filter-2)">
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-366.5276" y1="790.5953" x2="-366.5276" y2="791.5953" gradientTransform="matrix(189.22 0 0 -182.25 69273.7422 144533)">
+		<stop  offset="0" style="stop-color:#E45F9C"/>
+		<stop  offset="1" style="stop-color:#FFC3AB"/>
+	</linearGradient>
+	<polygon fill="url(#SVGID_1_)" points="14,447 -48.8,264.8 -175.2,410.3 	"/>
+</g>
 </svg>

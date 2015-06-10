@@ -10,6 +10,9 @@ head.ready(function() {
 				mouseWheel:{ preventDefault: true }
 			});
 		});
+		$('body').mCustomScrollbar({
+			theme:"dark-2"
+		});
 		            
 	});
 

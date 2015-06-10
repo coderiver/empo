@@ -10,11 +10,12 @@
 $hover: #ab004e
 
 body
-	min-width: 1366px
+	min-width: 1280px
 	+hr 
 	font-size: 14px 
 	line-height: 1.4
 	color: #333
+		 
 
 // common blocks      
 .link
@@ -40,7 +41,23 @@ body
 .title
 	font-size: 12px
 	text-transform: uppercase
-	letter-spacing: 2px			
+	letter-spacing: 2px
+	
+.arrow
+	float: right
+	display: inline-block
+	vertical-align: middle
+	width: 60px
+	font-size: 0
+	height: 12px
+	overflow: hidden
+	+tr(all 300ms)
+	span
+		font-size: 12px
+	&.arrow_right
+		float: none
+		span
+			float: right				
 
 
 

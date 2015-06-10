@@ -35,12 +35,17 @@ body { min-width: 1280px; font-family: "HelveticaNeueCyrRoman"; font-size: 14px;
 .link:before { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: #efcedd; -moz-transition: height 200ms; -o-transition: height 200ms; -webkit-transition: height 200ms; transition: height 200ms; z-index: -1; }
 .link:hover:before { height: 50%; }
 
-.title { font-size: 12px; text-transform: uppercase; letter-spacing: 2px; }
+.title { margin-bottom: 50px; font-size: 12px; text-transform: uppercase; letter-spacing: 2px; }
 
-.arrow { float: right; display: inline-block; vertical-align: middle; width: 60px; font-size: 0; height: 12px; overflow: hidden; -moz-transition: all 300ms; -o-transition: all 300ms; -webkit-transition: all 300ms; transition: all 300ms; }
+.arrow { float: right; display: inline-block; vertical-align: middle; width: 60px; font-size: 0; height: 12px; overflow: hidden; -moz-transition: width 300ms; -o-transition: width 300ms; -webkit-transition: width 300ms; transition: width 300ms; }
 .arrow span { font-size: 12px; }
 .arrow.arrow_right { float: none; }
 .arrow.arrow_right span { float: right; }
+
+.back { display: inline-block; *zoom: 1; color: #333; margin-left: 80px; }
+.back:after { content: " "; display: table; clear: both; }
+.back:hover .arrow { width: 80px; }
+.back .arrow { position: absolute; top: 4px; right: 125%; }
 
 .center { padding: 0 56px; margin: 0 auto; }
 
@@ -71,10 +76,10 @@ body { min-width: 1280px; font-family: "HelveticaNeueCyrRoman"; font-size: 14px;
 
 .col12 { float: left; min-height: 1px; width: 100%; }
 
-.out { position: relative; padding-top: 160px; }
+.out { position: relative; padding-top: 200px; }
 .out.out_index { padding-top: 110px; }
 
-.header { position: fixed; top: 0; left: 0; right: 0; min-width: 1280px; padding: 56px 35px 0; z-index: 99; }
+.header { position: fixed; top: 0; left: 0; right: 0; min-width: 1280px; padding: 56px 56px 0; z-index: 99; }
 .header .header__tools { position: relative; }
 
 .phone { position: absolute; top: -30px; right: 0; }
@@ -100,27 +105,34 @@ body { min-width: 1280px; font-family: "HelveticaNeueCyrRoman"; font-size: 14px;
 
 .schools { margin-right: -56px; }
 .schools .schools__list { font-size: 0; overflow: hidden; margin-left: -150px; }
-.schools .schools__item { position: relative; float: left; min-height: 284px; margin-left: 80px; margin-right: 40px; padding: 110px 0; font-size: 14px; }
-.schools .schools__item:first-child { margin-left: 0; }
-.schools .schools__item:last-child { margin-right: 0; }
-.schools .schools__item.triangle { width: 340px; padding-left: 150px; }
-.schools .schools__item.ellipse { width: 290px; padding-left: 100px; }
-.schools .schools__in { position: relative; display: block; z-index: 2; }
-.schools .schools__in:hover .schools__title { color: #ab004e; }
-.schools .schools__in:hover .arrow { width: 80px; }
-.schools .schools__counter { margin-bottom: 40px; font-size: 10px; color: #333; letter-spacing: 1px; }
-.schools .schools__title { font-size: 30px; font-family: "HelveticaNeueCyrBold"; color: #333; -moz-transition: color 300ms; -o-transition: color 300ms; -webkit-transition: color 300ms; transition: color 300ms; }
-.schools .schools__title .icon-arrow-right { margin-left: 15px; }
-.schools .triangle1, .schools .triangle2, .schools .triangle3, .schools .ellipse1, .schools .ellipse2, .schools .ellipse3, .schools .rectangle1, .schools .rectangle2, .schools .rectangle3 { position: absolute; top: 50%; left: 50%; z-index: 1; }
-.schools .triangle1 { width: 220px; height: 220px; margin: -76px 0 0 -70px; background: url(../img/svg/polygon-1.svg) 50% 50% no-repeat; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; -webkit-animation: rotation 10s linear infinite; -moz-animation: rotation 10s linear infinite; -ms-animation: rotation 10s linear infinite; -o-animation: rotation 10s linear infinite; animation: rotation 10s linear infinite; }
-.schools .triangle2 { width: 240px; height: 240px; margin: -86px 0 0 -80px; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; background: url(../img/svg/polygon-2.svg) 50% 50% no-repeat; -webkit-animation: rotation 10.3s linear infinite; -moz-animation: rotation 10.3s linear infinite; -ms-animation: rotation 10.3s linear infinite; -o-animation: rotation 10.3s linear infinite; animation: rotation 10.3s linear infinite; }
-.schools .triangle3 { width: 260px; height: 260px; margin: -96px 0 0 -90px; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; background: url(../img/svg/polygon-3.svg) 50% 50% no-repeat; -webkit-animation: rotation 10.6s linear infinite; -moz-animation: rotation 10.6s linear infinite; -ms-animation: rotation 10.6s linear infinite; -o-animation: rotation 10.6s linear infinite; animation: rotation 10.6s linear infinite; }
-.schools .ellipse1 { width: 240px; height: 240px; margin: -90px 0 0 -100px; -webkit-transform-origin: 45% 50%; transform-origin: 45% 50%; background: url(../img/svg/ellipse-1.svg) 50% 50% no-repeat; -webkit-animation: rotation 4s linear infinite; -moz-animation: rotation 4s linear infinite; -ms-animation: rotation 4s linear infinite; -o-animation: rotation 4s linear infinite; animation: rotation 4s linear infinite; }
-.schools .ellipse2 { width: 260px; height: 260px; margin: -100px 0 0 -110px; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; background: url(../img/svg/ellipse-2.svg) 50% 50% no-repeat; -webkit-animation: rotation 4.3s linear infinite; -moz-animation: rotation 4.3s linear infinite; -ms-animation: rotation 4.3s linear infinite; -o-animation: rotation 4.3s linear infinite; animation: rotation 4.3s linear infinite; }
-.schools .ellipse3 { width: 280px; height: 280px; margin: -110px 0 0 -120px; -webkit-transform-origin: 55% 50%; transform-origin: 55% 50%; background: url(../img/svg/ellipse-3.svg) 50% 50% no-repeat; -webkit-animation: rotation 4.6s linear infinite; -moz-animation: rotation 4.6s linear infinite; -ms-animation: rotation 4.6s linear infinite; -o-animation: rotation 4.6s linear infinite; animation: rotation 4.6s linear infinite; }
-.schools .rectangle1 { width: 240px; height: 240px; margin: -90px 0 0 -100px; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; background: url(../img/svg/rectangle-1.svg) 50% 50% no-repeat; -webkit-animation: rotationBack 10s linear infinite; -moz-animation: rotationBack 10s linear infinite; -ms-animation: rotationBack 10s linear infinite; -o-animation: rotationBack 10s linear infinite; animation: rotationBack 10s linear infinite; }
-.schools .rectangle2 { width: 260px; height: 260px; margin: -100px 0 0 -110px; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; background: url(../img/svg/rectangle-2.svg) 50% 50% no-repeat; -webkit-animation: rotationBack 10.3s linear infinite; -moz-animation: rotationBack 10.3s linear infinite; -ms-animation: rotationBack 10.3s linear infinite; -o-animation: rotationBack 10.3s linear infinite; animation: rotationBack 10.3s linear infinite; }
-.schools .rectangle3 { width: 280px; height: 280px; margin: -110px 0 0 -120px; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; background: url(../img/svg/rectangle-3.svg) 50% 50% no-repeat; -webkit-animation: rotationBack 10.6s linear infinite; -moz-animation: rotationBack 10.6s linear infinite; -ms-animation: rotationBack 10.6s linear infinite; -o-animation: rotationBack 10.6s linear infinite; animation: rotationBack 10.6s linear infinite; }
+
+.school { position: relative; float: left; min-height: 284px; margin-left: 80px; margin-right: 40px; padding: 110px 0; font-size: 14px; }
+.school:first-child { margin-left: 0; }
+.school:last-child { margin-right: 0; }
+.school.triangle { width: 340px; padding-left: 150px; }
+.school.ellipse { width: 290px; padding-left: 100px; }
+.school.school_big.triangle { margin-left: -150px; margin-top: -110px; }
+.school.school_big .school__title { font-size: 48px; }
+.school.school_big .school__counter { font-size: 14px; }
+.school.school_big .triangle1 { width: 300px; height: 300px; margin: -116px 0 0 -110px; }
+.school.school_big .triangle2 { width: 320px; height: 320px; margin: -126px 0 0 -120px; }
+.school.school_big .triangle3 { width: 340px; height: 340px; margin: -136px 0 0 -130px; }
+.school .school__in { position: relative; display: block; z-index: 2; }
+.school a.school__in:hover .school__title { color: #ab004e; }
+.school a.school__in:hover .arrow { width: 80px; }
+.school .school__counter { margin-bottom: 40px; font-size: 10px; color: #333; letter-spacing: 1px; }
+.school .school__title { font-size: 30px; font-family: "HelveticaNeueCyrBold"; line-height: 1.2; color: #333; -moz-transition: color 300ms; -o-transition: color 300ms; -webkit-transition: color 300ms; transition: color 300ms; }
+.school .school__title .icon-arrow-right { margin-left: 15px; }
+.school .triangle1, .school .triangle2, .school .triangle3, .school .ellipse1, .school .ellipse2, .school .ellipse3, .school .rectangle1, .school .rectangle2, .school .rectangle3 { position: absolute; top: 50%; left: 50%; z-index: 1; }
+.school .triangle1 { width: 220px; height: 220px; margin: -76px 0 0 -70px; background: url(../img/svg/polygon-1.svg) 50% 50% no-repeat; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; -webkit-animation: rotation 10s linear infinite; -moz-animation: rotation 10s linear infinite; -ms-animation: rotation 10s linear infinite; -o-animation: rotation 10s linear infinite; animation: rotation 10s linear infinite; }
+.school .triangle2 { width: 240px; height: 240px; margin: -86px 0 0 -80px; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; background: url(../img/svg/polygon-2.svg) 50% 50% no-repeat; -webkit-animation: rotation 10.3s linear infinite; -moz-animation: rotation 10.3s linear infinite; -ms-animation: rotation 10.3s linear infinite; -o-animation: rotation 10.3s linear infinite; animation: rotation 10.3s linear infinite; }
+.school .triangle3 { width: 260px; height: 260px; margin: -96px 0 0 -90px; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; background: url(../img/svg/polygon-3.svg) 50% 50% no-repeat; -webkit-animation: rotation 10.6s linear infinite; -moz-animation: rotation 10.6s linear infinite; -ms-animation: rotation 10.6s linear infinite; -o-animation: rotation 10.6s linear infinite; animation: rotation 10.6s linear infinite; }
+.school .ellipse1 { width: 240px; height: 240px; margin: -90px 0 0 -100px; -webkit-transform-origin: 45% 50%; transform-origin: 45% 50%; background: url(../img/svg/ellipse-1.svg) 50% 50% no-repeat; -webkit-animation: rotation 4s linear infinite; -moz-animation: rotation 4s linear infinite; -ms-animation: rotation 4s linear infinite; -o-animation: rotation 4s linear infinite; animation: rotation 4s linear infinite; }
+.school .ellipse2 { width: 260px; height: 260px; margin: -100px 0 0 -110px; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; background: url(../img/svg/ellipse-2.svg) 50% 50% no-repeat; -webkit-animation: rotation 4.3s linear infinite; -moz-animation: rotation 4.3s linear infinite; -ms-animation: rotation 4.3s linear infinite; -o-animation: rotation 4.3s linear infinite; animation: rotation 4.3s linear infinite; }
+.school .ellipse3 { width: 280px; height: 280px; margin: -110px 0 0 -120px; -webkit-transform-origin: 55% 50%; transform-origin: 55% 50%; background: url(../img/svg/ellipse-3.svg) 50% 50% no-repeat; -webkit-animation: rotation 4.6s linear infinite; -moz-animation: rotation 4.6s linear infinite; -ms-animation: rotation 4.6s linear infinite; -o-animation: rotation 4.6s linear infinite; animation: rotation 4.6s linear infinite; }
+.school .rectangle1 { width: 240px; height: 240px; margin: -90px 0 0 -100px; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; background: url(../img/svg/rectangle-1.svg) 50% 50% no-repeat; -webkit-animation: rotationBack 10s linear infinite; -moz-animation: rotationBack 10s linear infinite; -ms-animation: rotationBack 10s linear infinite; -o-animation: rotationBack 10s linear infinite; animation: rotationBack 10s linear infinite; }
+.school .rectangle2 { width: 260px; height: 260px; margin: -100px 0 0 -110px; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; background: url(../img/svg/rectangle-2.svg) 50% 50% no-repeat; -webkit-animation: rotationBack 10.3s linear infinite; -moz-animation: rotationBack 10.3s linear infinite; -ms-animation: rotationBack 10.3s linear infinite; -o-animation: rotationBack 10.3s linear infinite; animation: rotationBack 10.3s linear infinite; }
+.school .rectangle3 { width: 280px; height: 280px; margin: -110px 0 0 -120px; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; background: url(../img/svg/rectangle-3.svg) 50% 50% no-repeat; -webkit-animation: rotationBack 10.6s linear infinite; -moz-animation: rotationBack 10.6s linear infinite; -ms-animation: rotationBack 10.6s linear infinite; -o-animation: rotationBack 10.6s linear infinite; animation: rotationBack 10.6s linear infinite; }
 
 @-moz-keyframes rotation { from { -ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); }
   to { -ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
@@ -142,11 +154,12 @@ body { min-width: 1280px; font-family: "HelveticaNeueCyrRoman"; font-size: 14px;
   to { -ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); } }
 @keyframes rotationBack { from { -ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg); }
   to { -ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); } }
-.events { margin-right: -56px; margin-bottom: 50px; }
+.events { margin-right: -56px; }
 .events .events__list { overflow: hidden; *zoom: 1; }
 .events .events__list:after { content: " "; display: table; clear: both; }
+.events .events__list .event { float: left; width: 325px; }
 
-.event { float: left; width: 325px; color: #333; }
+.event { display: block; color: #333; margin-bottom: 50px; }
 .event:hover .event__name { color: #ab004e; }
 .event:hover .arrow { width: 80px; }
 .event:hover .arrow .icon-arrow-right { color: #eac0d3; }
@@ -155,3 +168,10 @@ body { min-width: 1280px; font-family: "HelveticaNeueCyrRoman"; font-size: 14px;
 .event .event__line { position: relative; height: 1px; margin-bottom: 25px; background: #ccc; }
 .event .event__line:before { content: ""; position: absolute; top: -3px; left: 0; width: 7px; height: 7px; border-radius: 50%; background: #333; }
 .event .event__name { margin-bottom: 15px; padding-right: 25%; font-size: 14px; font-family: "HelveticaNeueCyrBold"; -moz-transition: color 300ms; -o-transition: color 300ms; -webkit-transition: color 300ms; transition: color 300ms; }
+
+.sidebar { padding-top: 260px; }
+
+.filters { padding-top: 125px; }
+.filters .filters__list { font-size: 0; }
+.filters .filters__list > li { display: inline-block; vertical-align: middle; margin-bottom: 32px; margin-right: 50px; }
+.filters .filters__counter { position: absolute; top: -10px; right: -18px; font-size: 10px; }

@@ -39,6 +39,7 @@ body
 		&:before
 			height: 50%
 .title
+	margin-bottom: 50px
 	font-size: 12px
 	text-transform: uppercase
 	letter-spacing: 2px
@@ -51,13 +52,25 @@ body
 	font-size: 0
 	height: 12px
 	overflow: hidden
-	+tr(all 300ms)
+	+tr(width 300ms)
 	span
 		font-size: 12px
 	&.arrow_right
 		float: none
 		span
-			float: right				
+			float: right
+.back
+	display: inline-block
+	+clr
+	color: #333
+	margin-left: 80px
+	&:hover
+		.arrow
+			width: 80px
+	.arrow
+		position: absolute
+		top: 4px
+		right: 125% 	 							
 
 
 

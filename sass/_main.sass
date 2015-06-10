@@ -1,7 +1,7 @@
 // Normally mainpage styles
 .out
 	position: relative
-	padding-top: 160px
+	padding-top: 200px
 	&.out_index
 		padding-top: 110px 
 .header
@@ -10,7 +10,7 @@
 	left: 0
 	right: 0
 	min-width: 1280px
-	padding: 56px 35px 0 
+	padding: 56px 56px 0 
 	z-index: 99
 	.header__tools
 		position: relative
@@ -77,42 +77,64 @@
 	.schools__list
 		font-size: 0
 		overflow: hidden
-		margin-left: -150px 
-	.schools__item
-		position: relative
-		float: left
-		min-height: 284px
-		margin-left: 80px
-		margin-right: 40px
-		padding: 110px 0 
-		font-size: 14px	
-		&:first-child
-			margin-left: 0
-		&:last-child
-			margin-right: 0	
+		margin-left: -150px
+.school
+	position: relative
+	float: left
+	min-height: 284px
+	margin-left: 80px
+	margin-right: 40px
+	padding: 110px 0 
+	font-size: 14px	
+	&:first-child
+		margin-left: 0
+	&:last-child
+		margin-right: 0	
+	&.triangle
+		width: 340px 
+		padding-left: 150px
+	&.ellipse
+		width: 290px
+		padding-left: 100px 	
+	&.school_big
 		&.triangle
-			width: 340px 
-			padding-left: 150px
-		&.ellipse
-			width: 290px
-			padding-left: 100px 	
-	.schools__in
+			margin-left: -150px
+			margin-top: -110px
+		.school__title
+			font-size: 48px
+		.school__counter
+			font-size: 14px	
+		.triangle1
+			width: 300px
+			height: 300px
+			margin: -116px 0 0 -110px
+		.triangle2
+			width: 320px
+			height: 320px
+			margin: -126px 0 0 -120px
+		.triangle3
+			width: 340px
+			height: 340px
+			margin: -136px 0 0 -130px			
+	.school__in
 		position: relative
 		display: block
 		z-index: 2
+	a.school__in	
 		&:hover
-			.schools__title
+			.school__title
 				color: #ab004e
 			.arrow
 				width: 80px	
-	.schools__counter
+	.school__counter
 		margin-bottom: 40px
 		font-size: 10px
 		color: #333
 		letter-spacing: 1px
-	.schools__title
+	.school__title
 		font-size: 30px
 		+hb
+		line-height: 1.2 
 		color: #333
 		+tr(color 300ms)
 		.icon-arrow-right
@@ -210,14 +232,16 @@
 // events
 .events
 	margin-right: -56px
-	margin-bottom: 50px
 	.events__list
 		overflow: hidden
-		+clr		
+		+clr
+		.event
+			float: left
+			width: 325px		
 .event
-	float: left
-	width: 325px
+	display: block
 	color: #333
+	margin-bottom: 50px 
 	&:hover
 		.event__name
 			color: $hover
@@ -254,4 +278,21 @@
 		padding-right: 25% 
 		font-size: 14px
 		+hb	
-		+tr(color 300ms)		 
+		+tr(color 300ms)
+
+.sidebar
+	padding-top: 260px				 
+.filters
+	padding-top: 125px
+	.filters__list
+		font-size: 0
+		& > li
+			display: inline-block
+			vertical-align: middle
+			margin-bottom: 32px
+			margin-right: 50px
+	.filters__counter
+		position: absolute
+		top: -10px
+		right: -18px
+		font-size: 10px  		

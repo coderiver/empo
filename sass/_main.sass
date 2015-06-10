@@ -87,6 +87,9 @@
 		&.triangle
 			width: 340px 
 			padding-left: 150px
+		&.ellipse
+			width: 290px
+			padding-left: 100px 	
 	.schools__in
 		position: relative
 		z-index: 2
@@ -101,37 +104,91 @@
 		color: #333
 		.arrow
 			margin-left: 20px
-	.triangle1, .triangle2, .triangle3
+	.triangle1, .triangle2, .triangle3,
+	.ellipse1, .ellipse2, .ellipse3,
+	.rectangle1, .rectangle2, .rectangle3
 		position: absolute
 		top: 50%
 		left: 50%
 	.triangle1
-		width: 200px
-		height: 200px 
+		width: 220px
+		height: 220px 
 		margin: -76px 0 0 -70px 
 		background: url(../img/svg/polygon-1.svg) 50% 50% no-repeat 
 		-webkit-transform-origin: 50% 50%
 		transform-origin: 50% 50%
 		+animation(rotation 10s linear infinite)				 				
 	.triangle2
-		width: 220px
-		height: 220px 
+		width: 240px
+		height: 240px 
 		margin: -86px 0 0 -80px 
 		-webkit-transform-origin: 50% 50%
 		transform-origin: 50% 50%
 		background: url(../img/svg/polygon-2.svg) 50% 50% no-repeat
 		+animation(rotation 10.3s linear infinite)	
 	.triangle3
-		width: 240px
-		height: 240px 
+		width: 260px
+		height: 260px 
 		margin: -96px 0 0 -90px
 		-webkit-transform-origin: 50% 50%
 		transform-origin: 50% 50% 
 		background: url(../img/svg/polygon-3.svg) 50% 50% no-repeat
-		+animation(rotation 10.6s linear infinite)	
-
+		+animation(rotation 10.6s linear infinite)
+	.ellipse1
+		width: 240px
+		height: 240px
+		margin: -90px 0 0 -100px
+		-webkit-transform-origin: 45% 50%
+		transform-origin: 45% 50% 
+		background: url(../img/svg/ellipse-1.svg) 50% 50% no-repeat
+		+animation(rotation 4s linear infinite)
+	.ellipse2
+		width: 260px
+		height: 260px
+		margin: -100px 0 0 -110px
+		-webkit-transform-origin: 50% 50%
+		transform-origin: 50% 50% 
+		background: url(../img/svg/ellipse-2.svg) 50% 50% no-repeat
+		+animation(rotation 4.3s linear infinite)
+	.ellipse3
+		width: 280px
+		height: 280px
+		margin: -110px 0 0 -120px
+		-webkit-transform-origin: 55% 50%
+		transform-origin: 55% 50% 
+		background: url(../img/svg/ellipse-3.svg) 50% 50% no-repeat
+		+animation(rotation 4.6s linear infinite)
+	.rectangle1
+		width: 240px
+		height: 240px
+		margin: -90px 0 0 -100px 		 	  		
+		-webkit-transform-origin: 50% 50%
+		transform-origin: 50% 50% 
+		background: url(../img/svg/rectangle-1.svg) 50% 50% no-repeat
+		+animation(rotationBack 10s linear infinite)
+	.rectangle2
+		width: 260px
+		height: 260px
+		margin: -100px 0 0 -110px 		 	  		
+		-webkit-transform-origin: 50% 50%
+		transform-origin: 50% 50% 
+		background: url(../img/svg/rectangle-2.svg) 50% 50% no-repeat
+		+animation(rotationBack 10.3s linear infinite)
+	.rectangle3
+		width: 280px
+		height: 280px
+		margin: -110px 0 0 -120px 		 	  		
+		-webkit-transform-origin: 50% 50%
+		transform-origin: 50% 50% 
+		background: url(../img/svg/rectangle-3.svg) 50% 50% no-repeat
+		+animation(rotationBack 10.6s linear infinite)		
 +keyframes(rotation)
 	from
 		+rotate(0)
 	to
 		+rotate(360)			
++keyframes(rotationBack)
+	from
+		+rotate(360)
+	to
+		+rotate(0)		

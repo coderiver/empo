@@ -1,0 +1,11 @@
+<!-- Generator: Avocode 2.1.0 - http://avocode.com -->
+<svg height="225" width="224" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224 225">
+    <defs>
+        <linearGradient y2="0%" y1="100%" x2="0%" x1="0%" id="gradient-1">
+            <stop stop-color="#ff8fc2" offset="0%" />
+            <stop stop-color="#e3fdb6" offset="98%" />
+            <stop stop-color="#e3fdb6" offset="100%" />
+        </linearGradient>
+    </defs>
+    <path fill="url(#gradient-1)" opacity="0.5" d="M 90.68 0.9 L -0.1 133.32 L 132.32 224.1 L 223.1 91.68 L 90.68 0.9 Z" />
+</svg>

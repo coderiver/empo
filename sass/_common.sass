@@ -6,12 +6,15 @@
 =hb
 	font-family: 'HelveticaNeueCyrBold'
 
+// vars
+$hover: #ab004e
+
 body
 	min-width: 1366px
 	+hr 
 	font-size: 14px 
 	line-height: 1.4
-
+	color: #333
 
 // common blocks      
 .link
@@ -33,14 +36,11 @@ body
 		z-index: -1
 	&:hover
 		&:before
-			height: 50% 
-
-.arrow
-	display: inline-block
-	vertical-align: middle
-	width: 60px
-	height: 9px
-	background: url(../img/svg/arrow.svg) 0 0 no-repeat  
+			height: 50%
+.title
+	font-size: 12px
+	text-transform: uppercase
+	letter-spacing: 2px			
 
 
 

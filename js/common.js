@@ -2,29 +2,16 @@ head.ready(function() {
 
 	// mCustomScrollbar
 	$(window).load(function(){
-		$('.schools__list').mCustomScrollbar({
-			axis: 'x',
-			advanced:{ autoExpandHorizontalScroll:true
-			},
-			mouseWheel:{ preventDefault: true }
-		});            
-	});
-
-	// horizontal sliders on main page
-	function horSliderWidth() {
-		var ww = $('.out').width(),
-			w = 1366,
-			width = 972;
-
-			margin = (ww - w)/2;
-			countWidth = width + margin +35;
-			console.log(ww, width, countWidth);
-			
-			$('.js-hor-scroll').css({
-				width: countWidth 
+		$('.js-hor-scroll').each(function() {
+			$(this).mCustomScrollbar({
+				axis: 'x',
+				advanced:{ autoExpandHorizontalScroll:true
+				},
+				mouseWheel:{ preventDefault: true }
 			});
-	}
-	horSliderWidth();
+		});
+		            
+	});
 
 	// scrolling fixed elements
 	function scrollFixedElements() {
@@ -50,7 +37,7 @@ head.ready(function() {
 
 	// window resize event
 	$(window).resize(function(){
-	    horSliderWidth();
+	    
 	});
 	// window scroll  event
 	$(window).scroll(function(){

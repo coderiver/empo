@@ -10,10 +10,7 @@
 	left: 0
 	right: 0
 	min-width: 1366px
-	padding: 56px 35px 0
-	.header__in
-		max-width: 1296px
-		margin: 0 auto 
+	padding: 56px 35px 0 
 	.header__tools
 		position: relative
 .phone
@@ -71,6 +68,7 @@
 
 // schools
 .schools
+	margin-right: -56px
 	.schools__list
 		font-size: 0
 		overflow: hidden
@@ -80,10 +78,16 @@
 		float: left
 		min-height: 284px
 		margin-left: 80px
+		margin-right: 40px
 		padding: 110px 0 
 		font-size: 14px	
+		&:hover
+			.schools__title
+				color: #ab004e
 		&:first-child
 			margin-left: 0
+		&:last-child
+			margin-right: 0	
 		&.triangle
 			width: 340px 
 			padding-left: 150px
@@ -93,6 +97,8 @@
 	.schools__in
 		position: relative
 		z-index: 2
+		.icon-arrow
+			font-size: 9px
 	.schools__counter
 		margin-bottom: 40px
 		font-size: 10px
@@ -102,6 +108,7 @@
 		font-size: 30px
 		+hb
 		color: #333
+		+tr(color 300ms)
 		.arrow
 			margin-left: 20px
 	.triangle1, .triangle2, .triangle3,
@@ -192,3 +199,50 @@
 		+rotate(360)
 	to
 		+rotate(0)		
+
+// events
+.events
+	margin-right: -56px
+	margin-bottom: 50px
+	.events__list
+		overflow: hidden
+		+clr		
+	.events__item
+		float: left
+		width: 325px
+		color: #333
+		&:hover
+			.events__name
+				color: $hover
+			.icon-arrow
+				color: #eac0d3	
+		.icon-arrow
+			font-size: 9px
+			color: #c1c1c1
+			+tr(color 300ms)
+	.events__date
+		margin-bottom: 15px
+		padding-right: 25%
+		font-size: 12px
+		text-transform: uppercase
+		letter-spacing: 2px
+	.events__line
+		position: relative
+		height: 1px
+		margin-bottom: 25px
+		background: #ccc
+		&:before
+			content: ""
+			position: absolute
+			top: -3px
+			left: 0
+			width: 7px
+			height: 7px
+			border-radius: 50%
+			background: #333   	 		
+	.events__name
+		margin-bottom: 15px
+		padding-right: 25% 
+		font-size: 14px
+		+hb	
+		+tr(color 300ms)

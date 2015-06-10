@@ -29,15 +29,15 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 @font-face { font-family: HelveticaNeueCyrRoman; src: url("fonts/HelveticaNeueCyrRoman.eot"); src: url("fonts/HelveticaNeueCyrRoman.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueCyrRoman.woff2") format("woff2"), url("fonts/HelveticaNeueCyrRoman.woff") format("woff"), url("fonts/HelveticaNeueCyrRoman.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: HelveticaNeueCyrBold; src: url("fonts/HelveticaNeueCyrBold.eot"); src: url("fonts/HelveticaNeueCyrBold.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueCyrBold.woff2") format("woff2"), url("fonts/HelveticaNeueCyrBold.woff") format("woff"), url("fonts/HelveticaNeueCyrBold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-body { min-width: 1366px; font-family: "HelveticaNeueCyrRoman"; font-size: 14px; line-height: 1.4; }
+body { min-width: 1366px; font-family: "HelveticaNeueCyrRoman"; font-size: 14px; line-height: 1.4; color: #333; }
 
 .link { position: relative; display: inline-block; padding: 2px 0; font-size: 12px; text-transform: uppercase; color: #333; }
 .link:before { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: #efcedd; -moz-transition: height 200ms; -o-transition: height 200ms; -webkit-transition: height 200ms; transition: height 200ms; z-index: -1; }
 .link:hover:before { height: 50%; }
 
-.arrow { display: inline-block; vertical-align: middle; width: 60px; height: 9px; background: url(../img/svg/arrow.svg) 0 0 no-repeat; }
+.title { font-size: 12px; text-transform: uppercase; letter-spacing: 2px; }
 
-.center { max-width: 1366px; padding: 0 35px; margin: 0 auto; }
+.center { padding: 0 56px; margin: 0 auto; }
 
 .row { *zoom: 1; }
 .row:after { content: " "; display: table; clear: both; }
@@ -70,7 +70,6 @@ body { min-width: 1366px; font-family: "HelveticaNeueCyrRoman"; font-size: 14px;
 .out.out_index { padding-top: 110px; }
 
 .header { position: fixed; top: 0; left: 0; right: 0; min-width: 1366px; padding: 56px 35px 0; }
-.header .header__in { max-width: 1296px; margin: 0 auto; }
 .header .header__tools { position: relative; }
 
 .phone { position: absolute; top: -30px; right: 0; }
@@ -92,14 +91,18 @@ body { min-width: 1366px; font-family: "HelveticaNeueCyrRoman"; font-size: 14px;
 .logo a { position: relative; display: inline-block; padding: 38px 0 0 103px; color: #ab004e; font-size: 10px; text-transform: uppercase; }
 .logo a:before { content: ""; position: absolute; top: 0; left: 0; width: 97px; height: 34px; background: #ab004e url(../img/svg/logo.svg) 5px 5px no-repeat; }
 
+.schools { margin-right: -56px; }
 .schools .schools__list { font-size: 0; overflow: hidden; margin-left: -150px; }
-.schools .schools__item { position: relative; float: left; min-height: 284px; margin-left: 80px; padding: 110px 0; font-size: 14px; }
+.schools .schools__item { position: relative; float: left; min-height: 284px; margin-left: 80px; margin-right: 40px; padding: 110px 0; font-size: 14px; }
+.schools .schools__item:hover .schools__title { color: #ab004e; }
 .schools .schools__item:first-child { margin-left: 0; }
+.schools .schools__item:last-child { margin-right: 0; }
 .schools .schools__item.triangle { width: 340px; padding-left: 150px; }
 .schools .schools__item.ellipse { width: 290px; padding-left: 100px; }
 .schools .schools__in { position: relative; z-index: 2; }
+.schools .schools__in .icon-arrow { font-size: 9px; }
 .schools .schools__counter { margin-bottom: 40px; font-size: 10px; color: #333; letter-spacing: 1px; }
-.schools .schools__title { font-size: 30px; font-family: "HelveticaNeueCyrBold"; color: #333; }
+.schools .schools__title { font-size: 30px; font-family: "HelveticaNeueCyrBold"; color: #333; -moz-transition: color 300ms; -o-transition: color 300ms; -webkit-transition: color 300ms; transition: color 300ms; }
 .schools .schools__title .arrow { margin-left: 20px; }
 .schools .triangle1, .schools .triangle2, .schools .triangle3, .schools .ellipse1, .schools .ellipse2, .schools .ellipse3, .schools .rectangle1, .schools .rectangle2, .schools .rectangle3 { position: absolute; top: 50%; left: 50%; }
 .schools .triangle1 { width: 220px; height: 220px; margin: -76px 0 0 -70px; background: url(../img/svg/polygon-1.svg) 50% 50% no-repeat; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; -webkit-animation: rotation 10s linear infinite; -moz-animation: rotation 10s linear infinite; -ms-animation: rotation 10s linear infinite; -o-animation: rotation 10s linear infinite; animation: rotation 10s linear infinite; }
@@ -132,3 +135,14 @@ body { min-width: 1366px; font-family: "HelveticaNeueCyrRoman"; font-size: 14px;
   to { -ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); } }
 @keyframes rotationBack { from { -ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg); }
   to { -ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); } }
+.events { margin-right: -56px; margin-bottom: 50px; }
+.events .events__list { overflow: hidden; *zoom: 1; }
+.events .events__list:after { content: " "; display: table; clear: both; }
+.events .events__item { float: left; width: 325px; color: #333; }
+.events .events__item:hover .events__name { color: #ab004e; }
+.events .events__item:hover .icon-arrow { color: #eac0d3; }
+.events .events__item .icon-arrow { font-size: 9px; color: #c1c1c1; -moz-transition: color 300ms; -o-transition: color 300ms; -webkit-transition: color 300ms; transition: color 300ms; }
+.events .events__date { margin-bottom: 15px; padding-right: 25%; font-size: 12px; text-transform: uppercase; letter-spacing: 2px; }
+.events .events__line { position: relative; height: 1px; margin-bottom: 25px; background: #ccc; }
+.events .events__line:before { content: ""; position: absolute; top: -3px; left: 0; width: 7px; height: 7px; border-radius: 50%; background: #333; }
+.events .events__name { margin-bottom: 15px; padding-right: 25%; font-size: 14px; font-family: "HelveticaNeueCyrBold"; -moz-transition: color 300ms; -o-transition: color 300ms; -webkit-transition: color 300ms; transition: color 300ms; }

@@ -59,6 +59,10 @@ body
 		float: none
 		span
 			float: right
+	&.arrow_small
+		width: 30px
+		span
+			font-size: 8px		
 .back
 	display: inline-block
 	+clr
@@ -70,9 +74,57 @@ body
 	.arrow
 		position: absolute
 		top: 4px
-		right: 125% 	 							
-
-
+		right: 125% 
+.circle, .square
+	display: inline-block
+	vertical-align: middle
+	width: 21px
+	height: 21px
+	background: #fff
+	border: 4px solid #333
+	&.circle_small, &.square_small
+		width: 15px
+		height: 15px
+		border-width: 3px			 							
+.circle
+	border-radius: 50%
+.divide
+	width: 1px
+	height: 120px
+	margin: 40px 0 
+	background: #eaeaea 
+.pagination
+	display: inline-block
+	.pagination__prev, .pagination__next
+		position: relative
+		display: inline-block
+		text-transform: uppercase
+		font-size: 10px
+		letter-spacing: 1px 
+		color: #333
+		+tr(color 300ms)
+		&:hover
+			color: $hover
+			.arrow
+				width: 50px
+	.pagination__prev
+		margin-left: 45px
+		.arrow
+			position: absolute
+			top: 3px
+			right: 125%
+	.pagination__next
+		margin-right: 45px 
+		.arrow
+			position: absolute
+			top: 3px
+			left: 125%		
+	.pagination__pager
+		display: inline-block
+		vertical-align: middle		
+		margin: 0 43px
+		color: #aaa
+		font-size: 12px 
 
 
 

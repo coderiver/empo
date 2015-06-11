@@ -284,6 +284,7 @@
 	padding-top: 260px				 
 .filters
 	padding-top: 125px
+	margin-bottom: 50px
 	.filters__list
 		font-size: 0
 		& > li
@@ -291,8 +292,189 @@
 			vertical-align: middle
 			margin-bottom: 32px
 			margin-right: 50px
+			a.is-active
+				&:before
+					height: 50%
 	.filters__counter
 		position: absolute
 		top: -10px
 		right: -18px
-		font-size: 10px  		
+		font-size: 10px
+.symbols
+	margin-bottom: 70px
+	.symbols__item
+		margin-bottom: 20px
+		font-size: 12px
+		text-transform: uppercase
+		color: #aaa
+		letter-spacing: 2px  
+	.symbols__line
+		display: inline-block
+		vertical-align: middle
+		width: 33px
+		height: 1px
+		margin: 0 21px 
+		background: #ccc 	 
+.courses
+	padding-top: 40px
+	padding-bottom: 120px 
+	.pagination
+		+transform(translateX(-50%))
+	.courses__list
+		padding-top: 80px
+		margin-left: -$col
+		padding-right: $col
+		.divide
+			margin-left: $col 
+.item
+	position: relative
+	padding-top: 12%
+	margin-bottom: 70px
+	&.item_link
+		.item__subtitle
+			padding-left: $col
+	.item__topper
+		position: absolute
+		top: 5%
+		left: $col
+	.item__content
+		position: relative
+		width: 66.6667% 
+		padding: 5% $col
+		background: #fff
+		box-shadow: 0 15px 50px rgba(0, 0, 0, 0.05)
+		z-index: 2
+	.item__img
+		position: absolute
+		top: 0
+		right: 0
+		width: 55%
+		z-index: 1	
+		&:hover
+			z-index: 3
+			.picture
+				opacity: 1 
+				img
+					opacity: 1
+	.item__link
+		display: inline-block
+		margin-bottom: 30px
+		font-size: 30px
+		color: #333
+		+hb
+		&:hover	
+			color: $hover
+			.arrow
+				width: 80px
+	.item__subtitle
+		margin-bottom: 40px
+		color: #aaa
+		font-size: 18px							 
+.picture
+	position: relative
+	font-size: 0
+	+g(#ffc0dc, #cdf0e9)
+	opacity: 0.8 
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		+rotate(-5)
+		+g(#ffc0dc, #cdf0e9)
+		z-index: -1
+	img
+		width: 100%
+		height: auto
+		opacity: 0.5
+		+tr(opacity 300ms) 				 
+.tag
+	font-size: 0
+	a
+		display: inline-block
+		vertical-align: middle
+		margin-left: 50px
+		max-width: 120px
+		font-size: 12px
+		+hb
+		text-transform: uppercase
+		letter-spacing: 2px
+		color: #333
+		+tr(color 300ms)
+		&:hover
+			color: $hover
+.plus-list
+	li
+		position: relative
+		padding-left: $col
+		margin-bottom: 12px
+		&:before
+			content: "+"
+			position: absolute
+			top: -3px
+			left: 0
+			color: $hover
+			font-size: 18px 			
+
+// footer
+.footer
+	.footer__topper
+		padding-bottom: 50px
+		border-bottom: 1px solid #eaeaea
+		margin-bottom: 50px
+	.footer__menu
+		padding-bottom: 55px	
+	.footer__left
+		float: left
+	.footer__right
+		float: right
+		.link
+			margin-left: 55px
+			&:first-child
+				margin-left: 0		 
+.contacts
+	.contacts__adress
+		margin-bottom: 30px
+		font-size: 10px
+		letter-spacing: 2px
+		text-transform: uppercase
+		& > p
+			color: #aaa
+			margin-bottom: 15px
+	.contacts__phones
+		li
+			margin-bottom: 5px
+.socials
+	font-size: 0
+	margin-bottom: 90px
+	.socials__link, .socials__title
+		display: inline-block
+		vertical-align: middle
+		margin-right: 23px
+		font-size: 10px
+		text-transform: uppercase
+		letter-spacing: 2px
+		color: #333
+	.socials__link
+		&:hover
+			color: $hover
+		span
+			font-size: 18px
+.copyrights
+	text-align: right
+	font-size: 10px
+	color: #aaa
+	text-transform: uppercase
+	letter-spacing: 2px
+	p
+		margin-bottom: 10px
+		&:last-child
+			margin-top: 20px
+	a
+		color: #333
+		+hb
+		+tr(color 300ms)
+		&:hover
+			color: $hover	

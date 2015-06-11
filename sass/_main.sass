@@ -86,6 +86,7 @@
 	margin-right: 40px
 	padding: 110px 0 
 	font-size: 14px	
+	z-index: 2
 	&:first-child
 		margin-left: 0
 	&:last-child
@@ -97,6 +98,8 @@
 		width: 290px
 		padding-left: 100px 	
 	&.school_big
+		float: none
+		width: 650px
 		&.triangle
 			margin-left: -150px
 			margin-top: -110px
@@ -107,15 +110,15 @@
 		.triangle1
 			width: 300px
 			height: 300px
-			margin: -116px 0 0 -110px
+			margin: -166px 0 0 -260px
 		.triangle2
 			width: 320px
 			height: 320px
-			margin: -126px 0 0 -120px
+			margin: -176px 0 0 -270px
 		.triangle3
 			width: 340px
 			height: 340px
-			margin: -136px 0 0 -130px			
+			margin: -186px 0 0 -280px			
 	.school__in
 		position: relative
 		display: block
@@ -391,7 +394,11 @@
 		opacity: 0.5
 		+tr(opacity 300ms) 				 
 .tag
+	position: relative
 	font-size: 0
+	z-index: 9
+	&.tag_top
+		margin-bottom: 58px 
 	a
 		display: inline-block
 		vertical-align: middle
@@ -421,6 +428,7 @@
 // footer
 .footer
 	.footer__topper
+		overflow: hidden // delete
 		padding-bottom: 50px
 		border-bottom: 1px solid #eaeaea
 		margin-bottom: 50px
@@ -477,4 +485,126 @@
 		+hb
 		+tr(color 300ms)
 		&:hover
-			color: $hover	
+			color: $hover
+.submenu
+	position: relative
+	margin-bottom: 60px
+	.submenu__line
+		position: absolute
+		top: 0
+		left: -100px
+		width: 70px
+		height: 1px
+		margin-top: 8px
+		background: #333  
+		+tr(top 300ms)
+	ul
+		li
+			margin-bottom: 20px
+			a
+				position: relative
+				display: inline-block
+				padding-bottom: 2px
+				font-size: 12px
+				text-transform: uppercase
+				letter-spacing: 2px
+				color: #333
+				background: url(../img/link-pattern.png) 0 100% repeat-x 
+				+tr(color 300ms)
+				&:hover, &.is-active
+					color: $hover
+.share
+	font-size: 0
+	margin-bottom: 35px
+	span, a
+		display: inline-block
+		vertical-align: middle
+	& > span
+		margin-right: 20px
+		font-size: 10px
+		text-transform: uppercase
+		letter-spacing: 2px
+		color: #333
+	a
+		color: #aaa
+		margin-left: 10px
+		font-size: 13px
+		+tr(color 300ms)
+		&:hover
+			color: $hover 	
+.section
+	margin-bottom: 110px									
+.about
+	position: relative
+	+clr
+	margin-top: -110px
+	.about__video
+		position: relative
+		float: right
+		width: 100%
+		margin-right: -$col
+		z-index: 1
+	.about__content
+		position: absolute
+		top: 70px
+		left: 0
+		width: 50%
+		z-index: 2
+		.plus-list
+			margin-left: -$col
+			li
+				&:before
+					left: -30px
+.list-counter
+	counter-reset: list
+	li
+		position: relative
+		&:before							
+			content: '0'counter(list)
+			counter-increment: list
+			position: absolute
+			top: 3px 
+			left: -73px 
+			font-size: 10px
+			color: $hover
+			letter-spacing: 2px
+		&:nth-child(n+10)
+			&:before
+				content: counter(list)
+	&.advantages
+		li
+			margin-bottom: 58px
+			font-size: 30px
+			+hb 		
+			line-height: 1.2			
+.include
+	position: relative
+	padding: 40px 40px 0 0
+	margin-bottom: 90px
+	&:before
+		content: ""
+		position: absolute
+		top: 20px
+		left: -31px
+		width: 20px
+		height: 20px
+		background: transparent
+		border: 1px solid #333
+		border-width: 0 1px 1px 0  
+	.include__number
+		margin-bottom: 10px
+		font-size: 100px
+		+hb
+		line-height: 1
+	.include__info
+		font-size: 12px
+		text-transform: uppercase
+		letter-spacing: 2px  	 			
+.service
+	& > span
+		display: inline-block
+		margin-bottom: 25px
+		font-size: 52px 
+	.service__text	
+		font-size: 18px
+		+hb 			

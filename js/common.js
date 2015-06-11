@@ -1,5 +1,19 @@
 head.ready(function() {
 
+	// subnav line animation
+
+	$('.submenu a').on('click', function() {
+		$('.submenu a').removeClass('is-active');
+		$(this).addClass('is-active');
+
+		var index = $(this).parent().position().top;
+		
+		$('.js-submenu-line').css({
+			'top': index 
+		})
+
+	})
+
 	// mCustomScrollbar
 	$(window).load(function(){
 		$('.js-hor-scroll').each(function() {

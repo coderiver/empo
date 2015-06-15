@@ -517,6 +517,17 @@ body { min-width: 1280px; font-family: "HelveticaNeueCyrRoman"; font-size: 14px;
 .author .author__name { margin-bottom: 10px; font-size: 30px; font-family: "HelveticaNeueCyrBold"; }
 .author .author__info { font-size: 14px; color: #aaa; }
 
+.out_error { height: 100%; overflow: hidden; }
+
+.error-page { padding-top: 60px; }
+.error-page .error-page__in { position: relative; padding-left: 160px; }
+.error-page .error-page__code { position: absolute; top: 120px; left: 0; font-size: 14px; letter-spacing: 2px; }
+.error-page .error-page__back { margin-left: -79px; }
+
+.triangle4 { position: absolute; top: 25%; left: 20%; width: 546px; height: 597px; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; background: url(../img/svg/triangle4.svg) 50% 50% no-repeat; -webkit-animation: rotation 30s linear infinite; -moz-animation: rotation 30s linear infinite; -ms-animation: rotation 30s linear infinite; -o-animation: rotation 30s linear infinite; animation: rotation 30s linear infinite; }
+
+.triangle5 { position: absolute; top: 0; left: 60%; width: 294px; height: 309px; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; background: url(../img/svg/triangle5.svg) 50% 50% no-repeat; -webkit-animation: rotation 20s linear infinite; -moz-animation: rotation 20s linear infinite; -ms-animation: rotation 20s linear infinite; -o-animation: rotation 20s linear infinite; animation: rotation 20s linear infinite; }
+
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 .slick-slider:hover { cursor: e-resize; }
 

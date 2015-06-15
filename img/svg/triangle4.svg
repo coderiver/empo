@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" baseProfile="full"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:ev="http://www.w3.org/2001/xml-events" 
+  height="597px" 
+  width="546px" 
+>
+<defs>
+<linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%">
+  <stop offset="0%" stop-color="rgb(228,95,156)" stop-opacity="1" />
+  <stop offset="100%" stop-color="rgb(255,195,171)" stop-opacity="1" />
+</linearGradient>
+
+</defs><path opacity="0.502" fill="url(#PSgrad_0)"
+ d="M545.612,596.951 C545.612,596.951 0.62799999999999,347.94 0.62799999999999,347.94 C0.62799999999999,347.94 488.827,0.55000000000001 488.827,0.55000000000001 C488.827,0.55000000000001 545.612,596.951 545.612,596.951 Z "/>
+</svg>

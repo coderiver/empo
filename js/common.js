@@ -96,7 +96,7 @@ head.ready(function() {
 				mouseWheel:{ preventDefault: true }
 			});
 		});
-		$('body').mCustomScrollbar({
+		$('.body-scroll').mCustomScrollbar({
 			theme:"dark-2",
 			scrollInertia: false,
 			mouseWheel:{ scrollAmount: 120 }

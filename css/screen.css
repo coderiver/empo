@@ -59,6 +59,8 @@ body { min-width: 1280px; font-family: "HelveticaNeueCyrRoman"; font-size: 14px;
 .back:after { content: " "; display: table; clear: both; }
 .back:hover .arrow { width: 80px; }
 .back:hover .back__school { color: #ab004e; }
+.school__in .back { font-size: 24px; text-transform: uppercase; }
+.school__in .back .arrow { top: 9px; }
 .back .back__school { position: relative; display: inline-block; vertical-align: middle; font-family: "HelveticaNeueCyrBold"; -moz-transition: color 300ms; -o-transition: color 300ms; -webkit-transition: color 300ms; transition: color 300ms; }
 .back .back__school > p { position: absolute; top: -20px; left: 0; font-family: "HelveticaNeueCyrRoman"; font-size: 10px; color: #aaa; letter-spacing: 2px; }
 .back .arrow { position: absolute; top: 4px; right: 125%; }
@@ -90,7 +92,7 @@ body { min-width: 1280px; font-family: "HelveticaNeueCyrRoman"; font-size: 14px;
 .btn .arrow span { font-size: 8px; }
 .btn.btn_wide { padding: 10px 99px 0 102px; }
 
-.center { padding: 0 56px; margin: 0 auto; max-width: 1366px; }
+.center { padding: 0 56px; margin: 0 auto; }
 
 .row { *zoom: 1; }
 .row:after { content: " "; display: table; clear: both; }
@@ -215,7 +217,11 @@ body { min-width: 1280px; font-family: "HelveticaNeueCyrRoman"; font-size: 14px;
 
 .sidebar { padding-top: 260px; }
 
-.filters { padding-top: 125px; margin-bottom: 50px; }
+.filters { position: relative; padding-top: 125px; margin-bottom: 50px; z-index: 2; }
+.filters.filters_blog { padding-top: 79px; }
+.filters.filters_blog > .title { position: relative; }
+.filters.filters_blog > .title:before { content: ""; position: absolute; top: 0; left: -20px; bottom: 0; width: 20px; background: #fff; }
+.more .filters { padding-top: 0; }
 .filters .filters__list { font-size: 0; }
 .filters .filters__list > li { display: inline-block; vertical-align: middle; margin-bottom: 32px; margin-right: 50px; }
 .filters .filters__list > li a.is-active:before { height: 50%; }
@@ -425,3 +431,18 @@ body { min-width: 1280px; font-family: "HelveticaNeueCyrRoman"; font-size: 14px;
 .comm .comm__user { margin-bottom: 30px; font-size: 12px; color: #333; }
 .comm .comm__user a { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #aaa; }
 .comm .comm__user a:hover { text-decoration: underline; }
+
+.headline { position: relative; padding-top: 59px; }
+.headline .headline__counter { position: absolute; top: 0; left: 0; font-size: 10px; letter-spacing: 2px; }
+.headline .headline__name { font-size: 48px; font-family: "HelveticaNeueCyrBold"; overflow: hidden; }
+.headline .headline__name span { position: relative; display: inline-block; }
+.headline .headline__name span:before { content: ""; position: absolute; top: 50%; left: 130%; height: 1px; width: 2000em; background: #333; }
+
+.preview { position: relative; padding-left: 16.666%; }
+.preview:before { content: "by"; position: absolute; top: 0; left: 0; color: #ab004e; font-size: 10px; }
+.preview .preview__author { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; }
+.preview .preview__date { margin-bottom: 30px; font-size: 12px; color: #ccc; }
+.preview .preview__text { font-size: 18px; color: #aaa; }
+
+.more { padding-top: 250px; }
+.more .more__or { font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: #aaa; }

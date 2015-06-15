@@ -347,6 +347,8 @@
 		background: #fff
 		box-shadow: 0 15px 50px rgba(0, 0, 0, 0.05)
 		z-index: 2
+		& > p
+			margin-bottom: 70px 
 	.item__img
 		position: absolute
 		top: 0
@@ -369,6 +371,12 @@
 			color: $hover
 			.arrow
 				width: 80px
+	.item__title
+		display: inline-block
+		margin-bottom: 30px
+		font-size: 30px
+		color: #333
+		+hb			
 	.item__subtitle
 		margin-bottom: 40px
 		color: #aaa
@@ -770,7 +778,7 @@
 	.module__state
 		position: absolute
 		top: 3px
-		left: -50px
+		left: -$col
 		font-size: 18px
 		+hb
 		color: $hover 
@@ -785,7 +793,219 @@
 		+tr(color 300ms)
 		&:hover
 			color: $hover
-		 		 					
-
-
-		 	    		 			
+	.module__details
+		padding-left: 73px
+		padding-top: 60px
+		.list-counter
+			margin-bottom: 40px 
+			li
+				margin-bottom: 20px
+.form
+	& > p
+		margin-bottom: 50px
+		color: #aaa	
+	.btn
+		margin-top: 70px				 
+.radio
+	position: relative
+	display: block
+	font-size: 0
+	margin-bottom: 70px 
+	overflow: hidden
+	margin-left: -$col
+	padding-left: $col
+	&:first-child
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: $col
+			width: 107px
+			height: 107px
+			margin-left: -20px
+			background: url(../img/svg/triangle1.svg) no-repeat
+	&:nth-child(2)
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: $col
+			width: 107px
+			height: 107px
+			margin-left: -20px
+			background: url(../img/svg/triangle2.svg) no-repeat
+	&:nth-child(3)
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: $col
+			width: 107px
+			height: 107px
+			margin-left: -20px
+			background: url(../img/svg/triangle3.svg) no-repeat			 
+	input[type="radio"]
+		position: absolute
+		top: 50%
+		+transform(translateY(-50%))
+		left: 0
+	.radio__title
+		display: inline-block
+		vertical-align: middle
+		padding-top: 38px
+		width: 50%
+		height: 107px
+		span
+			position: relative
+			display: inline-block
+			font-size: 12px
+			text-transform: uppercase
+			letter-spacing: 2px 
+			&:before
+				content: ""
+				position: absolute
+				top: 50%
+				left: 150%
+				width: 2000em
+				height: 1px
+				background: #ccc  
+	.radio__price
+		position: relative
+		display: inline-block
+		vertical-align: middle 
+		width: 50%
+		text-align: right
+		font-size: 24px
+		span
+			display: inline-block
+			padding-left: 55px
+			background: #fff
+// input
+.input, .textarea
+	position: relative 
+	margin-bottom: 15px 			  
+	input[type="text"], textarea
+		display: inline-block
+		width: 100%
+		height: 68px
+		+hr
+		border-bottom: 1px solid #eee
+		font-size: 18px
+		color: #333	
+	label
+		position: absolute
+		top: 20px
+		left: 0
+		font-size: 18px
+		color: #aaa
+		pointer-events: none
+		-webkit-transform-origin: 0 0
+		transform-origin: 0 0
+		+transition(transform 0.2s 0.15s)
+		-webkit-transition-timing-function: ease-out
+		transition-timing-function: ease-out
+	input[type="text"]:focus + label, input[type="text"].filled + label
+		+transform(translate3d(0, -20px, 0) scale3d(0.75, 0.75, 1))
+.textarea
+	textarea
+		resize: none
+		height: 136px
+		padding: 15px 0 
+		border-width: 0 0 1px 0
+	textarea:focus + label, textarea.filled + label
+		+transform(translate3d(0, -25px, 0) scale3d(0.75, 0.75, 1))	 
+.checkbox
+	display: block
+	margin: 45px 0
+	font-size: 0
+	input, span
+		display: inline-block
+		vertical-align: middle
+	span
+		font-size: 14px
+	input
+		margin-right: 20px 		
+.item-wrap
+	margin-left: -$col
+	padding-right: $col
+	.item
+		margin-bottom: 140px 
+.block
+	+clr
+	margin-bottom: 90px
+	.block__left
+		float: left
+		width: 180px
+		margin-right: 60px
+	.block__right
+		overflow: hidden
+	.block__subtitle
+		margin-bottom: 35px 
+		color: #aaa
+.video-lib
+	.video-lib__item
+		margin-bottom: 100px 
+	.video-lib__main
+		margin-bottom: 15px
+	.video-lib__info
+		position: relative
+		padding-left: 70px
+		&:before
+			content: ""
+			position: absolute
+			top: 10px
+			left: 0
+			width: 40px
+			height: 1px
+			background: #333
+		.h4
+			margin-bottom: 0	
+		& > p
+			font-size: 12px
+			color: #aaa 	  		 	    		 			
+.faq
+	padding-top: 90px						
+	.list-counter
+		margin-bottom: 120px
+	.faq__item
+		margin-bottom: 60px
+	.faq__q
+		margin-bottom: 55px
+		font-size: 30px
+		+hb
+	.faq__a
+		position: relative
+		padding-left: 70px	
+		font-size: 16px
+		&:before
+			content: ""
+			position: absolute
+			top: 10px
+			left: 0
+			width: 40px
+			height: 1px
+			background: #333
+		p
+			margin-bottom: 10px	
+.comm
+	.comm__q
+		margin-top: 65px 			
+	.comm__author
+		font-size: 30px
+		+hb
+	.comm__date
+		margin-bottom: 30px		
+		font-size: 12px
+		letter-spacing: 1px
+		color: #ccc 
+	.comm__user
+		margin-bottom: 30px
+		font-size: 12px
+		color: #333
+		a
+			font-size: 10px
+			text-transform: uppercase
+			letter-spacing: 2px
+			color: #aaa	
+			&:hover
+				text-decoration: underline

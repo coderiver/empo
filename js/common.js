@@ -1,5 +1,34 @@
 head.ready(function() {
 
+	// slider slider
+
+	$('.js-slick').on('init', function(event, slick){
+		$('.slick-slide.slick-active').addClass('is-animated');
+	});
+	$('.js-slick').slick({
+		infinite: false,
+		slideToShow: 1
+	});
+	$('.js-slick .slick-list').append('<div class="slider__prev"></div>');
+	$('.js-slick .slick-list').append('<div class="slider__next"></div>');
+	$('.slider__prev').on('click', function() {
+		$('.js-slick').slick('slickPrev');
+	});
+	$('.slider__next').on('click', function() {
+		$('.js-slick').slick('slickNext');
+	});
+	$('.js-slick').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+
+		$('.slick-slide.slick-active').removeClass('is-animated');
+		if (nextSlide > currentSlide) {
+			$('.slick-slide.slick-active').next().addClass('is-animated');
+		}
+		else {
+			$('.slick-slide.slick-active').prev().addClass('is-animated');
+		}
+		
+	});
+
 	// input animation
 
 	$('.js-input').on('change', function() {

@@ -540,6 +540,11 @@
 .share
 	font-size: 0
 	margin-bottom: 35px
+	&.share_narrow
+		float: right
+		width: 30px
+		a
+			margin: 0 15px 10px
 	span, a
 		display: inline-block
 		vertical-align: middle
@@ -819,9 +824,7 @@
 .form
 	& > p
 		margin-bottom: 50px
-		color: #aaa	
-	.btn
-		margin-top: 70px				 
+		color: #aaa				 
 .radio
 	position: relative
 	display: block
@@ -940,7 +943,9 @@
 	span
 		font-size: 14px
 	input
-		margin-right: 20px 		
+		margin-right: 20px
+	& + .checkbox
+		margin-top: -20px	 		
 .item-wrap
 	margin-left: -$col
 	padding-right: $col
@@ -1078,3 +1083,244 @@
 		text-transform: uppercase
 		letter-spacing: 2px
 		color: #aaa  			 				
+
+// content
+.top
+	+clr
+	padding-top: 50px	
+	.top__left
+		position: relative
+		float: left
+		width: 62.5%
+		z-index: 2
+		.tag
+			top: -50px
+			a
+				margin-left: 0
+		.h2
+			margin-bottom: 40px		
+		.preview
+			margin-left: -2*$col
+	.top__right
+		position: relative
+		top: -90px
+		float: right
+		width: 62.5%
+		margin-left: -25%
+		z-index: 1
+		.picture
+			clear: both
+			margin-bottom: 22px
+.subscribe
+	position: absolute
+	top: 100%
+	right: 0 
+	width: 216px
+	&.is-fixed
+		position: fixed
+		top: 430px
+		right: 56px
+	.btn
+		margin-bottom: 100px
+		
+// article
+.top + .article
+	padding-top: 56px
+.article
+	display: block	 		
+	width: 75% 
+	margin-bottom: 140px
+	font-size: 18px
+	color: #777
+	p
+		margin-bottom: 20px
+		strong
+			+hb
+			color: #333
+		i
+			display: inline-block
+			margin-bottom: 55px
+			+hli
+			color: #aaa
+		a
+			position: relative
+			display: inline-block
+			padding: 2px 0
+			font-size: 12px
+			text-transform: uppercase
+			color: #333
+			&:before
+				content: ""
+				position: absolute
+				bottom: 0
+				left: 0
+				right: 0
+				height: 1px
+				background: #efcedd
+				+tr(height 200ms)
+				z-index: -1
+			&:hover
+				&:before
+					height: 50%
+	.list-counter
+		li
+			margin-bottom: 20px				
+.content
+	.section
+		width: 87.5%
+	.content__title
+		position: relative
+		width: 87.5%	
+		margin-bottom: 110px
+		font-size: 30px
+		+hb
+		&:before
+			content: ""
+			position: absolute
+			top: 10px
+			right: 100%
+			height: 60px
+			width: 2000em 
+			background: #f6e5ed
+		&:after
+			content: ""
+			position: absolute
+			top: 10px
+			left: -60px
+			width: 60px
+			height: 60px
+			background: #fff
+	.item
+		margin-left: -$col 		
+.img
+	margin-bottom: 70px
+	width: 75%
+	&.img_right
+		width: auto
+		margin-right: -56px
+	&.img_wide
+		width: auto
+		margin-right: -56px 
+		margin-left: -40% 
+		.img__info
+			margin-left: 3%
+	.img__wrap
+		font-size: 0
+		margin-bottom: 15px 
+		img
+			width: 100%
+			height: auto
+	.img__info
+		position: relative
+		padding-left: $col
+		&:before
+			content: ""
+			position: absolute
+			top: 5px
+			left: 0
+			width: 40px
+			height: 1px
+			background: #333
+	.img__title
+		font-size: 12px
+		text-transform: uppercase
+		letter-spacing: 2px
+		margin-bottom: 5px
+	.img__author
+		font-size: 10px
+		color: #ccc
+.list-plus
+	margin-bottom: 110px
+	li
+		position: relative
+		margin-bottom: 35px
+		font-size: 30px
+		+hb
+		line-height: 1.2
+		&:before
+			content: "+"
+			position: absolute
+			top: 5px
+			left: -40px
+			color: $hover
+			font-size: 18px
+			+hr
+
+// slider
+.slider-wrap
+	position: relative
+	width: 87.5%
+	margin-bottom: 110px
+.slider
+	.slider__prev
+		position: absolute
+		top: 0
+		bottom: 0
+		width: 50%
+		left: -10%
+	.slider__next
+		position: absolute
+		top: 0
+		bottom: 0
+		width: 50%
+		right: -10%
+.list
+	li
+		position: relative
+		margin-bottom: 20px 
+		&:before
+			content: ""						
+			position: absolute
+			top: 10px
+			left: -70px
+			width: 18px
+			height: 1px
+			background: $hover  		   		  				 				
+.quote
+	width: 87.5% 
+	margin-bottom: 110px 
+	margin-left: -6.75% 
+	text-align: center
+	color: #333
+	.quote__text
+		position: relative
+		padding-bottom: 100px
+		+hb
+		font-size: 30px
+		&:before
+			content: ""
+			position: absolute
+			bottom: 10px
+			left: 50%
+			width: 1px
+			height: 40px
+			background: #ccc
+	.quote__author
+		font-size: 12px
+		text-transform: uppercase
+		letter-spacing: 2px
+		p
+			color: #aaa
+			text-transform: none		   				
+.author
+	position: relative
+	margin-bottom: 110px
+	&:before
+		content: "by"
+		position: absolute
+		top: 10px
+		left: -73px
+		font-size: 10px
+		text-transform: uppercase
+		letter-spacing: 2px
+		color: $hover 
+	.share
+		margin-bottom: 10px	
+	.author__name
+		margin-bottom: 10px
+		font-size: 30px
+		+hb
+	.author__info
+		font-size: 14px
+		color: #aaa 	
+		 		

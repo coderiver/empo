@@ -5,6 +5,9 @@
 +font(HelveticaNeueCyrBold, HelveticaNeueCyrBold)
 =hb
 	font-family: 'HelveticaNeueCyrBold'
++font(HelveticaNeueCyrLightItalic, HelveticaNeueCyrLightItalic)
+=hli
+	font-family: 'HelveticaNeueCyrLightItalic'		
 
 // vars
 $hover: #ab004e
@@ -42,9 +45,11 @@ body
 		&:before
 			height: 50%
 .h2, .h3, .h4, .h5
-	+hb			
+	+hb
+	color: #333
 .h2
 	font-size: 48px
+	line-height: 1.2
 .h3
 	margin-bottom: 15px
 	font-size: 24px			

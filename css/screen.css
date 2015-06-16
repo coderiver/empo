@@ -405,6 +405,11 @@ button.btn { padding: 0 24px 0 27px; }
 .radio .radio__in .radio__info { margin-bottom: 30px; font-size: 14px; }
 
 .input, .textarea { position: relative; margin-bottom: 15px; }
+.input.success input, .input.success textarea, .textarea.success input, .textarea.success textarea { border-color: #ade5b8; }
+.input.success:before, .textarea.success:before { content: ""; position: absolute; top: 50%; right: 10px; margin-top: -9px; font-family: "icomoon"; font-size: 18px; color: #ade5b8; }
+.input.error input, .input.error textarea, .textarea.error input, .textarea.error textarea { border-color: #FF3232; color: #ff3232; }
+.input.error:before, .textarea.error:before { content: ""; position: absolute; top: 50%; right: 10px; margin-top: -9px; font-family: "icomoon"; font-size: 18px; color: #FF3232; }
+.input.error .error__text, .textarea.error .error__text { position: absolute; top: 105%; right: 0; font-size: 12px; color: #FF3232; }
 .input input, .input textarea, .textarea input, .textarea textarea { display: inline-block; width: 100%; height: 68px; font-family: "HelveticaNeueCyrRoman"; border-bottom: 1px solid #eee; font-size: 18px; color: #333; }
 .input label, .textarea label { position: absolute; top: 20px; left: 0; font-size: 18px; color: #aaa; pointer-events: none; -webkit-transform-origin: 0 0; transform-origin: 0 0; -moz-transition: -moz-transform 0.2s 0.15s; -o-transition: -o-transform 0.2s 0.15s; -webkit-transition: -webkit-transform 0.2s; -webkit-transition-delay: 0.15s; transition: transform 0.2s 0.15s; -webkit-transition-timing-function: ease-out; transition-timing-function: ease-out; }
 .input input:focus + label, .input input.filled + label, .textarea input:focus + label, .textarea input.filled + label { -moz-transform: translate3d(0, -20px, 0) scale3d(0.75, 0.75, 1); -ms-transform: translate3d(0, -20px, 0) scale3d(0.75, 0.75, 1); -webkit-transform: translate3d(0, -20px, 0) scale3d(0.75, 0.75, 1); transform: translate3d(0, -20px, 0) scale3d(0.75, 0.75, 1); }

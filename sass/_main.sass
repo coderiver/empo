@@ -939,7 +939,38 @@
 // input
 .input, .textarea
 	position: relative 
-	margin-bottom: 15px 			  
+	margin-bottom: 15px
+	&.success
+		input, textarea
+			border-color: #ade5b8
+		&:before
+			content: "\f00c"
+			position: absolute
+			top: 50%
+			right: 10px
+			margin-top: -9px
+			font-family: 'icomoon'
+			font-size: 18px
+			color: #ade5b8
+	&.error
+		input, textarea
+			border-color: #FF3232
+			color: #ff3232
+		&:before
+			content: "\f071"
+			position: absolute
+			top: 50%
+			right: 10px
+			margin-top: -9px
+			font-family: 'icomoon'
+			font-size: 18px
+			color: #FF3232	 	
+		.error__text
+			position: absolute
+			top: 105%
+			right: 0
+			font-size: 12px
+			color: #FF3232		 			  
 	input, textarea
 		display: inline-block
 		width: 100%

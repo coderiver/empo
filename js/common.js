@@ -74,18 +74,6 @@ head.ready(function() {
 
 	// subnav line animation
 
-	$('.submenu a').on('click', function() {
-		$('.submenu a').removeClass('is-active');
-		$(this).addClass('is-active');
-
-		var index = $(this).parent().position().top;
-		
-		$('.js-submenu-line').css({
-			'top': index 
-		})
-
-	})
-
 	// mCustomScrollbar
 	$(window).load(function(){
 		$('.js-hor-scroll').each(function() {
@@ -102,6 +90,26 @@ head.ready(function() {
 			mouseWheel:{ scrollAmount: 120 }
 		});
 		            
+	});
+
+	$('.submenu a').on('click', function() {
+		$('.submenu a').removeClass('is-active');
+		$(this).addClass('is-active');
+
+		var index = $(this).parent().position().top;
+		
+		$('.js-submenu-line').css({
+			'top': index 
+		});
+
+		var link = $(this).attr('href');
+
+		$('.body-scroll').mCustomScrollbar("scrollTo", ''+link+'',{
+    		scrollInertia:500
+		});
+	  	
+	  	return false;
+
 	});
 
 	// scrolling fixed elements

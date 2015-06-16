@@ -50,6 +50,8 @@ body { min-width: 1280px; font-family: "HelveticaNeueCyrRoman"; font-size: 14px;
 .title { margin-bottom: 50px; font-size: 12px; text-transform: uppercase; letter-spacing: 2px; }
 .title.title_big { max-width: 150px; margin-bottom: 75px; font-size: 16px; }
 
+.subtitle { font-size: 14px; color: #aaa; }
+
 .arrow { float: right; display: inline-block; vertical-align: middle; width: 60px; font-size: 0; height: 12px; overflow: hidden; -moz-transition: width 300ms; -o-transition: width 300ms; -webkit-transition: width 300ms; transition: width 300ms; }
 .arrow span { font-size: 12px; }
 .arrow.arrow_right { float: none; }
@@ -516,6 +518,15 @@ body { min-width: 1280px; font-family: "HelveticaNeueCyrRoman"; font-size: 14px;
 .author .share { margin-bottom: 10px; }
 .author .author__name { margin-bottom: 10px; font-size: 30px; font-family: "HelveticaNeueCyrBold"; }
 .author .author__info { font-size: 14px; color: #aaa; }
+
+.payment { padding-top: 70px; }
+.payment .payment__step { margin-bottom: 110px; }
+.payment .payment__number { margin-bottom: 25px; font-size: 12px; letter-spacing: 2px; color: #ab004e; }
+
+.personal .title_big { max-width: 100%; margin-bottom: 5px; }
+.personal .personal__tools { font-size: 12px; }
+.personal .personal__tools a { text-transform: uppercase; color: #aaa; letter-spacing: 2px; font-size: 10px; }
+.personal .personal__tools a:hover { text-decoration: underline; }
 
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 .slick-slider:hover { cursor: e-resize; }

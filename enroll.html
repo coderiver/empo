@@ -14,7 +14,7 @@
 	<link rel="stylesheet" media="all" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
-<body>
+<body class="body-scroll">
 <!-- BEGIN  out-->
 <div class="out">
 	<!-- header -->
@@ -67,19 +67,134 @@
 			<div class="row">
 				<aside class="sidebar col2"></aside>
 				<div class="col1"></div>
-				<main class="main col9">
+				<main class="main col7">
 					<h2 class="h2">The knowledge is almost yours</h2>
 					<div class="subtitle">Choose your course and payment method</div>
 					<div class="payment">
 						<div class="payment__step">
 							<div class="payment__number">01</div>
-							<div class="personal">
+							<div class="payment__topper">
 								<div class="title title_big">Tell us<br> about yourself:</div>
-								<div class="personal__tools">
+								<div class="payment__tools">
 									or <a href="#">use existing account</a>
 								</div>
 							</div>
+							<div class="personal">
+								<div class="personal__form">
+									<form>
+										<div class="row">
+											<div class="form__left">
+												<div class="input">
+													<input id="name4" type="text" class="js-input">
+													<label for="name4"><span>Your name</span></label>
+												</div>
+												<div class="input">
+									 				<input id="name5" type="text" class="js-input">
+									 				<label for="name5"><span>Your e-mail</span></label>
+									 			</div>
+											</div>
+											<div class="form__right">
+												<div class="input">
+													<input id="phone2" type="text" class="js-input">
+													<label for="phone2"><span>Your phone</span></label>
+												</div>
+												<div class="input">
+									 				<input id="pass1" type="password" class="js-input">
+									 				<label for="pass1"><span>Your password</span></label>
+									 			</div>
+											</div>
+										</div>
+									</form>	
+								</div>
+							</div>
 						</div> 
+						<div class="payment__step">
+							<div class="payment__number">02</div>
+							<div class="payment__topper">
+								<div class="title title_big">Choose your<br> course type:</div>
+								<div class="payment__tools">
+									<a href="#">What’s the difference?</a>
+								</div>
+							</div>
+							<div class="tariff form">
+								<form>
+									<div class="row">
+										<div class="form__left">
+											<label class="radio radio_big radio_vip" for="price3">
+												<input type="radio" name="price" id="price3">
+												<div class="radio__in">
+													<div class="radio__title"><span>Advanced course + Consulting</span></div>
+													<div class="radio__info">
+														You will get feedback from experts on any matters related to the course. In addition, the expert checks all the homework and make recommendations on the course
+													</div>
+													<div class="radio__price"><span>$ 99999</span></div>
+												</div>
+											</label>
+										</div>
+										<div class="form__right">
+											<label class="radio radio_advanced" for="price2">
+												<input type="radio" name="price" id="price2">
+												<div class="radio__title"><span>Advanced<br> course</span></div>
+												<div class="radio__price"><span>$ 9999</span></div>
+											</label>
+											<label class="radio radio_basic" for="price">
+												<input type="radio" name="price" id="price">
+												<div class="radio__title"><span>Basic<br> course</span></div>
+												<div class="radio__price"><span>$ 999</span></div>
+											</label>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="payment__step">
+							<div class="payment__number">03</div>
+							<div class="payment__topper">
+								<div class="title title_big">Select<br>payment method:</div>
+							</div>
+							<div class="pay">
+								<div class="form">
+									<div class="form__row">
+										<div class="input">
+											<input id="card" type="text" class="js-input">
+											<label for="card"><span>Credit card number</span></label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="form__left">
+											<div class="input">
+												<input id="CVV2" type="text" class="js-input">
+												<label for="CVV2"><span>CVV2</span></label>
+											</div>
+											<div class="paypal">
+												<p>Your payment data is encrypted and secure.<br> All amounts shown are in USD.</p>
+												<img src="img/paypal.jpg" alt="">	
+											</div>
+										</div>
+										<div class="form__right">
+											<div class="input">
+												<input id="expiration" type="text" class="js-input">
+												<label for="expiration"><span>Expiration date</span></label>
+											</div>
+											<div class="checkout">
+												<div class="amount">
+													<div class="amount__state">billed now</div>
+													<div class="amount__price">$99.00</div>
+												</div>
+												<label class="checkbox">
+													<input type="checkbox">
+													<span>I agree to <a href="#" class="link">Empo Terms</a></span>
+												</label>
+												<button type="submit" class="btn btn_submit">
+													<span class="icon-lock"></span>
+													<span>Buy now</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</div>
 					</div>
 				</main>
 			</div>

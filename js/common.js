@@ -85,9 +85,7 @@ head.ready(function() {
 			});
 		});
 		$('.body-scroll').mCustomScrollbar({
-			theme:"dark-2",
-			scrollInertia: false,
-			mouseWheel:{ scrollAmount: 120 }
+			theme:"dark-2"
 		});
 		            
 	});

@@ -44,6 +44,9 @@ body
 	&:hover
 		&:before
 			height: 50%
+	.error-page &
+		&:before
+			background: #ecafcb 		
 .h2, .h3, .h4, .h5
 	+hb
 	color: #333
@@ -106,7 +109,11 @@ body
 		font-size: 24px
 		text-transform: uppercase
 		.arrow
-			top: 9px		
+			top: 9px
+		&:hover
+			.arrow
+				span
+					color: $hover			
 	.back__school
 		position: relative
 		display: inline-block

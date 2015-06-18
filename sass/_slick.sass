@@ -13,7 +13,7 @@
 	touch-action: pan-y
 	-webkit-tap-highlight-color: transparent
 	&:hover
-		cursor: e-resize
+		cursor: url(../img/coursor-swipe.png), auto
 .slick-list
 	position: relative
 	overflow: hidden
@@ -58,11 +58,11 @@
 	height: 100%
 	min-height: 1px
 	opacity: 0
-	+tr(opacity 500ms) 
+	+tr(opacity 1s) 
 	img
 		display: block
 		width: 100%
-	&.is-animated
+	&.slick-active
 		opacity: 1 	
 	&.slick-loading img
 		display: none

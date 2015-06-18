@@ -17,17 +17,17 @@ head.ready(function() {
 	$('.slider__next').on('click', function() {
 		$('.js-slick').slick('slickNext');
 	});
-	$('.js-slick').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+	// $('.js-slick').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 
-		$('.slick-slide.slick-active').removeClass('is-animated');
-		if (nextSlide > currentSlide) {
-			$('.slick-slide.slick-active').next().addClass('is-animated');
-		}
-		else {
-			$('.slick-slide.slick-active').prev().addClass('is-animated');
-		}
+	// 	$('.slick-slide.slick-active').removeClass('is-animated');
+	// 	if (nextSlide > currentSlide) {
+	// 		$('.slick-slide.slick-active').next().addClass('is-animated');
+	// 	}
+	// 	else {
+	// 		$('.slick-slide.slick-active').prev().addClass('is-animated');
+	// 	}
 		
-	});
+	// });
 
 	// input animation
 

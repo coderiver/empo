@@ -543,7 +543,7 @@
 	margin-bottom: 35px
 	&.share_narrow
 		float: right
-		width: 30px
+		width: 45px
 		a
 			margin: 0 15px 10px
 	span, a
@@ -816,8 +816,26 @@
 		&:hover
 			color: $hover
 	.module__details
+		position: relative
 		padding-left: 73px
 		padding-top: 60px
+		padding-right: 42%
+		&:before
+			content: ""
+			position: absolute
+			top: 60px
+			bottom: 0
+			right: 7%
+			left: 65%
+			border: 1px solid #eee
+			border-width: 0 1px 0 1px
+		&:after
+			content: ""
+			position: absolute
+			top: 60px
+			bottom: 0
+			left: 79%
+			border-left: 1px solid #eee	
 		.list-counter
 			margin-bottom: 40px 
 			li
@@ -873,7 +891,7 @@
 		position: absolute
 		top: 50%
 		+transform(translateY(-50%))
-		left: 0
+		left: 1px
 	.radio__title
 		display: inline-block
 		vertical-align: middle
@@ -1374,7 +1392,8 @@
 			text-transform: none		   				
 .author
 	position: relative
-	margin-bottom: 110px
+	margin-bottom: 200px
+	margin-top: 110px
 	&:before
 		content: "by"
 		position: absolute

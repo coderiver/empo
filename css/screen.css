@@ -492,10 +492,10 @@ button.btn { padding: 0 24px 0 27px; }
 
 .top + .article { padding-top: 56px; }
 
-.article { display: block; width: 75%; margin-bottom: 130px; line-height: 1.7; font-size: 18px; color: #777; }
+.article { display: block; width: 75%; margin-bottom: 130px; line-height: 1.7; font-size: 18px; color: #777; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
 .article p { margin-bottom: 20px; }
 .article p strong { font-family: "HelveticaNeueCyrBold"; color: #333; }
-.article p i { display: inline-block; margin-bottom: 55px; font-family: "HelveticaNeueCyrLightItalic"; color: #aaa; }
+.article p i { display: inline-block; margin-bottom: 55px; font-family: "HelveticaNeueCyrLightItalic"; font-style: normal; color: #aaa; }
 .article p a { position: relative; display: inline-block; color: #777; }
 .article p a:before { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: #efcedd; -moz-transition: height 200ms; -o-transition: height 200ms; -webkit-transition: height 200ms; transition: height 200ms; z-index: -1; }
 .article p a:hover:before { height: 40%; }

@@ -91,7 +91,7 @@ head.ready(function() {
 			    	scroll = parseInt(scroll);
 			    	scroll = scroll*-1;
 			    	console.log(scroll);
-			    	if (scroll >= 330 && $('.js-fixed-share').length) {
+			    	if (scroll >= 600 && $('.js-fixed-share').length) {
 			    		$('.js-fixed-share').addClass('is-fixed');
 			    	}
 			    	else {

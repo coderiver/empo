@@ -305,8 +305,8 @@ button.btn { padding: 0 24px 0 27px; }
 .submenu ul li a:hover, .submenu ul li a.is-active { color: #ab004e; }
 
 .share { font-size: 0; margin-bottom: 35px; }
-.share.share_narrow { float: right; width: 42px; }
-.share.share_narrow.is-fixed { position: fixed; right: 56px; top: 480px; }
+.share.share_narrow { float: right; width: 46px; }
+.share.share_narrow.is-fixed { position: fixed; right: 56px; top: 120px; }
 .share.share_narrow a { margin: 0 15px 10px; }
 .share.share_big a { margin-left: 25px; font-size: 18px; }
 .share.share_big a:first-child { margin-left: 0; }

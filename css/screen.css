@@ -137,9 +137,9 @@ button.btn { padding: 0 24px 0 27px; }
 .out.out_index { padding-top: 110px; }
 
 .header { position: fixed; top: 0; left: 0; right: 0; min-width: 1280px; padding: 56px 56px 0; z-index: 99; }
-.header .header__tools { position: relative; padding-right: 6px; }
+.header .header__tools { position: relative; padding-right: 4px; }
 
-.phone { position: absolute; top: -30px; right: 6px; }
+.phone { position: absolute; top: -30px; right: 2px; }
 .phone a { font-size: 12px; color: #333; letter-spacing: 1px; }
 
 .menu .menu__list { *zoom: 1; }

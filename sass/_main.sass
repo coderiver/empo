@@ -14,10 +14,11 @@
 	z-index: 99
 	.header__tools
 		position: relative
+		padding-right: 6px 
 .phone
 	position: absolute
 	top: -30px
-	right: 0
+	right: 6px
 	a
 		font-size: 12px
 		color: #333
@@ -545,7 +546,11 @@
 	margin-bottom: 35px
 	&.share_narrow
 		float: right
-		width: 45px
+		width: 42px
+		&.is-fixed
+			position: fixed
+			right: 56px
+			top: 480px
 		a
 			margin: 0 15px 10px
 	&.share_big

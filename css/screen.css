@@ -98,6 +98,7 @@ body { min-width: 1280px; font-family: "HelveticaNeueCyrRoman"; font-size: 14px;
 .btn .arrow { height: 8px; width: 30px; margin-left: 10px; }
 .btn .arrow span { font-size: 8px; }
 .btn.btn_wide { padding: 11px 99px 0 102px; }
+.btn.btn_comm { padding: 11px 48px 0 60px; }
 .btn.btn_submit { width: 100%; text-align: center; }
 .subscribe .btn { width: 100%; text-align: center; }
 
@@ -544,7 +545,7 @@ button.btn { padding: 0 24px 0 27px; }
 .author .share a { margin-left: 14px; }
 .author .share a:first-child { margin-left: 0; }
 .author .author__name { margin-bottom: 10px; font-size: 30px; font-family: "HelveticaNeueCyrBold"; }
-.author .author__info { font-size: 14px; color: #aaa; }
+.author .author__info { font-size: 14px; line-height: 1.7; color: #aaa; }
 
 .payment { padding-top: 70px; }
 .payment .payment__step { margin-bottom: 110px; }

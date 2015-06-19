@@ -306,6 +306,7 @@ button.btn { padding: 0 24px 0 27px; }
 .share { font-size: 0; margin-bottom: 35px; }
 .share.share_narrow { float: right; width: 45px; }
 .share.share_narrow a { margin: 0 15px 10px; }
+.share.share_big a { font-size: 18px; }
 .share span, .share a { display: inline-block; vertical-align: middle; }
 .share > span { margin-right: 20px; font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #333; }
 .share a { color: #aaa; margin-left: 10px; font-size: 13px; -moz-transition: color 300ms; -o-transition: color 300ms; -webkit-transition: color 300ms; transition: color 300ms; }
@@ -540,6 +541,8 @@ button.btn { padding: 0 24px 0 27px; }
 .author { position: relative; margin-bottom: 200px; margin-top: 110px; }
 .author:before { content: "by"; position: absolute; top: 10px; left: -73px; font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #ab004e; }
 .author .share { margin-bottom: 10px; }
+.author .share a { margin-left: 14px; }
+.author .share a:first-child { margin-left: 0; }
 .author .author__name { margin-bottom: 10px; font-size: 30px; font-family: "HelveticaNeueCyrBold"; }
 .author .author__info { font-size: 14px; color: #aaa; }
 

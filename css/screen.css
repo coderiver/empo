@@ -482,6 +482,7 @@ button.btn { padding: 0 24px 0 27px; }
 .top .top__left .tag a { margin-left: 0; }
 .top .top__left .h2 { margin-bottom: 40px; }
 .top .top__left .preview { margin-left: -16.666%; }
+.top .top__left .preview:after { content: ""; position: absolute; top: 150%; left: 14.5%; width: 1px; height: 120px; background: #eee; }
 .top .top__right { position: relative; top: -90px; float: right; width: 62.5%; margin-left: -25%; z-index: 1; }
 .top .top__right .picture { clear: both; margin-bottom: 22px; }
 
@@ -581,6 +582,7 @@ button.btn { padding: 0 24px 0 27px; }
 
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 .slick-slider:hover { cursor: url(../img/coursor-swipe.png), auto; }
+.slick-slider:active { cursor: url(../img/drag.png), auto; }
 
 .slick-list { position: relative; overflow: hidden; display: block; margin: 0; padding: 0; }
 .slick-list:focus { outline: none; }

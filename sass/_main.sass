@@ -1191,6 +1191,14 @@
 			margin-bottom: 40px		
 		.preview
 			margin-left: -2*$col
+			&:after
+				content: ""
+				position: absolute
+				top: 150%
+				left: 14.5%
+				width: 1px
+				height: 120px
+				background: #eee   
 	.top__right
 		position: relative
 		top: -90px
@@ -1337,7 +1345,6 @@
 // slider
 .slider-wrap
 	position: relative
-	//width: 87.5%
 	margin-bottom: 110px
 	width: auto
 	margin-left: -40%

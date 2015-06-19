@@ -1,15 +1,5 @@
 head.ready(function() {
 
-	// js-fixed-share
-
-	function fixedShare() {
-		var scroll = $('.body').scrollTop();
-		console.log(scroll);	
-	}
-	if ($('.js-fixed-share').length) {
-		fixedShare();
-	};
-
 	// slider slider
 
 	$('.js-slick').on('init', function(event, slick){
@@ -152,9 +142,6 @@ head.ready(function() {
 	// window scroll  event
 	$(window).scroll(function(){
 	    scrollFixedElements();
-	    if ($('.js-fixed-share').length) {
-	    	fixedShare();
-	    };
 	});
 
 });

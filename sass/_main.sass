@@ -568,7 +568,8 @@
 	margin-bottom: 110px
 	.title
 		font-size: 16px
-		max-width: 150px									
+		max-width: 150px
+		margin-bottom: 80px									
 .about
 	position: relative
 	+clr
@@ -1218,7 +1219,8 @@
 .article
 	display: block	 		
 	width: 75% 
-	margin-bottom: 140px
+	margin-bottom: 130px
+	line-height: 1.7
 	font-size: 18px
 	color: #777
 	p
@@ -1241,13 +1243,13 @@
 				bottom: 0
 				left: 0
 				right: 0
-				height: 1px
+				height: 3px
 				background: #efcedd
 				+tr(height 200ms)
 				z-index: -1
 			&:hover
 				&:before
-					height: 50%
+					height: 40%
 	.list-counter
 		li
 			margin-bottom: 20px				
@@ -1327,7 +1329,7 @@
 			content: "+"
 			position: absolute
 			top: 5px
-			left: -40px
+			left: -73px
 			color: $hover
 			font-size: 18px
 			+hr
@@ -1335,21 +1337,25 @@
 // slider
 .slider-wrap
 	position: relative
-	width: 87.5%
+	//width: 87.5%
 	margin-bottom: 110px
+	width: auto
+	margin-left: -40%
+	margin-right: -56px
 .slider
+	width: 100% 
 	.slider__prev
 		position: absolute
 		top: 0
+		left: 0
 		bottom: 0
 		width: 50%
-		left: -10%
 	.slider__next
 		position: absolute
 		top: 0
+		right: 0
 		bottom: 0
 		width: 50%
-		right: -10%
 .list
 	li
 		position: relative

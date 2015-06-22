@@ -1,9 +1,10 @@
 head.ready(function() {
 
 	// img modal
-
-			var elements = document.querySelectorAll( '.image' );
-			Intense( elements );
+	if ($('.image').length) {
+		var elements = document.querySelectorAll( '.image' );
+		Intense( elements );
+	};	
 
 	// hint
 

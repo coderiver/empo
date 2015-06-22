@@ -1,5 +1,24 @@
 head.ready(function() {
 
+	// img modal
+
+			var elements = document.querySelectorAll( '.image' );
+			Intense( elements );
+
+	// hint
+
+	$('.js-hint-btn').on('click', function() {
+		if ($(this).hasClass('is-open')) {
+			$(this).parents('.item').find('.js-hint').slideUp();
+			$(this).text('View full biography').removeClass('is-open');
+		}
+		else {
+			$(this).parents('.item').find('.js-hint').slideDown();
+			$(this).text('Hide full biography').addClass('is-open');
+		}
+		return false;
+	})
+
 	// slider slider
 
 	$('.js-slick').on('init', function(event, slick){
@@ -80,7 +99,6 @@ head.ready(function() {
 			    	var scroll = $(this).find('#mCSB_1_container').css('top');
 			    	scroll = parseInt(scroll);
 			    	scroll = scroll*-1;
-			    	console.log(scroll);
 			    	if (scroll >= 600 && $('.js-fixed-share').length) {
 			    		$('.js-fixed-share').addClass('is-fixed');
 			    	}

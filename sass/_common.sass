@@ -31,6 +31,7 @@ body
 	font-size: 12px
 	text-transform: uppercase
 	color: #333
+	letter-spacing: 2px
 	&:before
 		content: ""
 		position: absolute
@@ -202,6 +203,7 @@ body
 	+hb
 	background: transparent 
 	color: $hover
+	+font-smoothing(antialiased)
 	+tr(color 300ms)
 	&:before
 		content: ""
@@ -233,6 +235,12 @@ body
 	&.btn_submit
 		width: 100%
 		text-align: center
+		span
+			vertical-align: baseline
+		.icon-lock
+			position: relative
+			top: 1px
+			margin-right: 5px
 	.subscribe &
 		width: 100%
 		text-align: center 	 	

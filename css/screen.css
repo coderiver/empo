@@ -138,7 +138,7 @@ button.btn { padding: 0 24px 0 27px; }
 .out { position: relative; padding-top: 200px; }
 .out.out_index { padding-top: 110px; }
 
-.header { position: fixed; top: 0; left: 0; right: 0; min-width: 1280px; padding: 56px 56px 0; z-index: 99; }
+.header { position: fixed; top: 0; left: 0; right: 12px; min-width: 1280px; padding: 56px 44px 0 56px; z-index: 99; }
 .header .header__tools { position: relative; padding-right: 4px; }
 
 .phone { position: absolute; top: -30px; right: 2px; }
@@ -303,7 +303,6 @@ button.btn { padding: 0 24px 0 27px; }
 .copyrights a:hover { color: #ab004e; }
 
 .submenu { position: relative; margin-bottom: 60px; }
-.submenu .submenu__line { position: absolute; top: 0; left: -100px; width: 70px; height: 1px; margin-top: 8px; background: #333; -moz-transition: top 300ms; -o-transition: top 300ms; -webkit-transition: top 300ms; transition: top 300ms; }
 .submenu ul li { margin-bottom: 20px; }
 .submenu ul li a { position: relative; display: inline-block; padding-bottom: 2px; font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: #333; background: url(../img/link-pattern.png) 0 100% repeat-x; -moz-transition: color 300ms; -o-transition: color 300ms; -webkit-transition: color 300ms; transition: color 300ms; }
 .submenu ul li a:hover, .submenu ul li a.is-active { color: #ab004e; }

@@ -95,7 +95,7 @@ head.ready(function() {
 		});
 		
 		function bodyScrollInit() {
-			$('.body-scroll').mCustomScrollbar({
+			$('.desktop .body-scroll').mCustomScrollbar({
 				theme:"dark-2",
 				callbacks:{
 					onInit: function() {

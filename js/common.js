@@ -65,7 +65,7 @@ head.ready(function() {
 			if (block.hasClass('is-active')) {
 				block.removeClass('is-active');
 				inner.slideUp();
-				innerState.text('-');
+				innerState.text('+');
 			}
 			else {
 				item.removeClass('is-active');

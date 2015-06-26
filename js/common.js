@@ -1,11 +1,5 @@
 head.ready(function() {
 
-	// sdfgsdgdfg
-
-	$('.js-hor-scroll').mouseover(function () {
-		$(this).mCustomScrollbar("update");
-	})
-
 	// img modal
 	if ($('.image').length) {
 		var elements = document.querySelectorAll( '.image' );

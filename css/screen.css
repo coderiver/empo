@@ -154,11 +154,11 @@ button.btn { padding: 0 24px 0 27px; }
 
 .lang { float: right; margin-right: 40px; }
 
-.logo { position: relative; padding-left: 20px; z-index: 99; }
+.logo { position: relative; top: -6px; padding-left: 20px; z-index: 99; }
 .logo a { position: relative; display: inline-block; padding: 38px 0 0 103px; color: #ab004e; font-size: 10px; text-transform: uppercase; }
 .logo a:before { content: ""; position: absolute; top: 0; left: 0; width: 97px; height: 34px; background: #ab004e url(../img/svg/logo.svg) 5px 5px no-repeat; }
 
-.breadcrumbs { position: fixed; top: 310px; left: 155px; z-index: 99; }
+.breadcrumbs { position: fixed; top: 283px; left: 155px; z-index: 99; }
 .breadcrumbs .back.link { margin-left: 80px; }
 
 .container { position: relative; z-index: 1; }

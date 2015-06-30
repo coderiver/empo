@@ -181,16 +181,16 @@ head.ready(function() {
 	    	$(".header").css({
 	    	    left: -scroll_left
 	    	});
-	    	$('.logo').css({
-	    		left: -scroll_left + 56
+	    	$('.breadcrumbs').css({
+	    		left: -scroll_left + 83
 	    	});
 	    }
 	    else {
 	    	$(".header").css({
 	    	    left: 0
 	    	});
-	    	$('.logo').css({
-	    		left: 56
+	    	$('.breadcrumbs').css({
+	    		left: 83
 	    	});
 	    }
 	}

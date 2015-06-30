@@ -14,13 +14,15 @@
 	z-index: 99
 	.header__tools
 		position: relative
-		padding-right: 4px 
+		padding-right: 4px
+	.header__link
+		position: absolute
+		top: -35px
+		right: 0 
 .phone
-	position: absolute
-	top: -30px
-	right: 2px
+	float: right
 	a
-		font-size: 12px
+		font-size: 14px
 		color: #333
 		letter-spacing: 1px	
 // menu
@@ -34,24 +36,11 @@
 				margin-left: 0	
 .lang
 	float: right
-	margin-right: 25px
-.user
-	float: right
-	.user__logged
-		display: inline-block
-		color: #aaa
-		font-size: 12px
-		span
-			color: #333
-			text-transform: uppercase
-	.user__logout
-		display: inline-block
-		margin-left: 25px
+	margin-right: 40px
 		
 .logo
-	position: fixed
-	left: 56px
-	top: 275px	
+	position: relative
+	padding-left: 20px 
 	z-index: 99								
 	a
 		position: relative
@@ -68,14 +57,20 @@
 			width: 97px
 			height: 34px
 			background: #ab004e url(../img/svg/logo.svg) 5px 5px no-repeat
-
+.breadcrumbs
+	position: fixed
+	top: 310px
+	left: 155px
+	z-index: 99
+	.back.link
+		margin-left: 80px
 .container
 	position: relative
 	z-index: 1
 // schools
 .schools
-	margin-right: -56px
-	margin-left: -56px
+	margin-right: -36px
+	margin-left: -36px
 	.schools__list
 		font-size: 0
 		overflow: hidden
@@ -235,8 +230,8 @@
 
 // events
 .events
-	margin-right: -56px
-	margin-left: -56px
+	margin-right: -36px
+	margin-left: -36px
 	.events__list
 		overflow: hidden
 		+clr
@@ -286,7 +281,7 @@
 		+tr(color 300ms)
 
 .sidebar
-	padding-top: 260px				 
+	padding: 260px 0 0 40px				 
 .filters
 	position: relative
 	padding-top: 125px
@@ -810,6 +805,8 @@
 		float: left
 		width: 14%
 		text-align: center
+		&.last, &.mid
+			text-align: right
 .module
 	margin-bottom: 60px
 	.module__main
@@ -824,10 +821,16 @@
 		width: 14%	
 		text-align: center
 		vertical-align: middle
+		font-size: 24px
 		.icon-check
 			color: $hover
 			&.is-disabled
-				color: #ccc	
+				color: #ccc
+		&.mid
+			text-align: right
+			padding-right: 2.8%
+		&.last
+			text-align: right			
 	.module__state
 		position: absolute
 		top: 3px
@@ -851,22 +854,22 @@
 		padding-left: 73px
 		padding-top: 60px
 		padding-right: 42%
-		&:before
-			content: ""
-			position: absolute
-			top: 60px
-			bottom: 0
-			right: 7%
-			left: 65%
-			border: 1px solid #eee
-			border-width: 0 1px 0 1px
-		&:after
-			content: ""
-			position: absolute
-			top: 60px
-			bottom: 0
-			left: 79%
-			border-left: 1px solid #eee	
+		// &:before
+		// 	content: ""
+		// 	position: absolute
+		// 	top: 60px
+		// 	bottom: 0
+		// 	right: 7%
+		// 	left: 65%
+		// 	border: 1px solid #eee
+		// 	border-width: 0 1px 0 1px
+		// &:after
+		// 	content: ""
+		// 	position: absolute
+		// 	top: 60px
+		// 	bottom: 0
+		// 	left: 79%
+		// 	border-left: 1px solid #eee	
 		.list-counter
 			margin-bottom: 40px 
 			li

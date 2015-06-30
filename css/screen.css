@@ -220,7 +220,7 @@ button.btn { padding: 0 24px 0 27px; }
 .events .events__list:after { content: " "; display: table; clear: both; }
 .events .events__list .event { float: left; width: 325px; }
 
-.event { display: block; color: #333; margin-bottom: 50px; }
+.event { display: block; color: #333; }
 .event:hover .event__name { color: #ab004e; }
 .event:hover .arrow { width: 80px; }
 .event:hover .arrow .icon-arrow-right { color: #eac0d3; }

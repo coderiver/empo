@@ -163,11 +163,11 @@ button.btn { padding: 0 24px 0 27px; }
 
 .container { position: relative; z-index: 1; }
 
-.schools { margin-right: -56px; }
-.schools .schools__list { font-size: 0; overflow: hidden; margin-left: -150px; }
+.schools { margin-right: -56px; margin-left: -56px; }
+.schools .schools__list { font-size: 0; overflow: hidden; }
 
 .school { position: relative; float: left; min-height: 284px; margin-left: 80px; margin-right: 40px; padding: 110px 0; font-size: 14px; z-index: 2; }
-.school:first-child { margin-left: 0; }
+.school:first-child { margin-left: 239px; }
 .school:last-child { margin-right: 0; }
 .school.triangle { width: 340px; padding-left: 150px; }
 .school.ellipse { width: 290px; padding-left: 100px; }
@@ -215,7 +215,7 @@ button.btn { padding: 0 24px 0 27px; }
   to { -ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); } }
 @keyframes rotationBack { from { -ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg); }
   to { -ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); } }
-.events { margin-right: -56px; }
+.events { margin-right: -56px; margin-left: -56px; }
 .events .events__list { overflow: hidden; *zoom: 1; }
 .events .events__list:after { content: " "; display: table; clear: both; }
 .events .events__list .event { float: left; width: 325px; }

@@ -81,9 +81,8 @@ head.ready(function() {
 	accordeon();
 	
 
-	// subnav line animation
-
 	// mCustomScrollbar
+
 	$(window).load(function(){
 		$('.js-hor-scroll').each(function() {
 			$(this).mCustomScrollbar({
@@ -137,6 +136,23 @@ head.ready(function() {
 		            
 	});
 
+	function horScrMrg(){
+		var viewportWidth = $(window).width(),
+			pl = (viewportWidth - 112)/4;
+		var minusPl = '-' + pl + 'px',
+			schoolPl = (pl - 96) + 'px',
+			eventPl = (pl + 55) + 'px';
+		
+		
+		$('.js-hor-scroll').css('margin-left', minusPl);
+		$('.school:first-child').css('margin-left', schoolPl);
+		$('.event:first-child').css('margin-left', eventPl);
+	}
+	if ($('.js-hor-scroll').length) {
+		horScrMrg();
+	};
+	
+
 	
 	$('.submenu a').on('click', function() {
 		$('.submenu a').removeClass('is-active');
@@ -185,6 +201,9 @@ head.ready(function() {
 	    if ($(window).width() <= 1024) {
 	    	$('.body-scroll').mCustomScrollbar("destroy");
 	    }
+	    if ($('.js-hor-scroll').length) {
+	    	horScrMrg();
+	    };
 	});
 	// window scroll  event
 	$(window).scroll(function(){

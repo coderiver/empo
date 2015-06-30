@@ -138,7 +138,7 @@ head.ready(function() {
 
 	function horScrMrg(){
 		var viewportWidth = $(window).width(),
-			pl = (viewportWidth - 112)/4;
+			pl = (viewportWidth - 56)/4;
 		var minusPl = '-' + pl + 'px',
 			schoolPl = (pl - 96) + 'px',
 			eventPl = (pl + 55) + 'px';

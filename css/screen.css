@@ -61,7 +61,7 @@ body { min-width: 1280px; font-family: "HelveticaNeueCyrRoman"; font-size: 14px;
 .arrow.arrow_small { width: 30px; }
 .arrow.arrow_small span { font-size: 8px; }
 
-.back { position: relative; display: inline-block; *zoom: 1; color: #333; margin-left: 96px; }
+.back { position: relative; display: inline-block; *zoom: 1; color: #333; margin-left: 80px; }
 .back:after { content: " "; display: table; clear: both; }
 .back:hover .arrow { width: 80px; }
 .back:hover .back__school { color: #ab004e; }
@@ -89,7 +89,7 @@ body { min-width: 1280px; font-family: "HelveticaNeueCyrRoman"; font-size: 14px;
 .pagination .pagination__next .arrow { position: absolute; top: 3px; left: 125%; }
 .pagination .pagination__pager { display: inline-block; vertical-align: middle; margin: 0 43px; color: #aaa; font-size: 12px; }
 
-.aside { position: fixed; top: 275px; right: 0; z-index: 99; width: 16.666%; padding-left: 35px; }
+.aside { position: fixed; top: 275px; right: 36px; z-index: 99; width: 16.666%; padding-left: 35px; }
 @media only screen and (max-width: 600px) { .aside { top: 200px; } }
 
 .btn { position: relative; display: inline-block; border: 3px solid #ab004e; height: 50px; padding: 11px 24px 0 27px; font-size: 16px; font-family: "HelveticaNeueCyrBold"; background: transparent; color: #ab004e; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; -moz-transition: color 300ms; -o-transition: color 300ms; -webkit-transition: color 300ms; transition: color 300ms; }
@@ -140,9 +140,9 @@ button.btn { padding: 0 24px 0 27px; }
 .out { position: relative; padding-top: 200px; }
 .out.out_index { padding-top: 110px; }
 
-.header { position: fixed; top: 0; left: 0; right: 12px; min-width: 1280px; padding: 56px 44px 0 56px; z-index: 99; }
+.header { position: fixed; top: 0; left: 0; right: 12px; min-width: 1280px; padding: 36px 44px 0 36px; z-index: 99; }
 .header .header__tools { position: relative; padding-right: 4px; }
-.header .header__link { position: absolute; top: -35px; right: 0; }
+.header .header__link { position: absolute; top: -30px; right: 0; }
 
 .phone { float: right; }
 .phone a { font-size: 14px; color: #333; letter-spacing: 1px; }
@@ -159,9 +159,11 @@ button.btn { padding: 0 24px 0 27px; }
 .logo a:before { content: ""; position: absolute; top: 0; left: 0; width: 97px; height: 34px; background: #ab004e url(../img/svg/logo.svg) 5px 5px no-repeat; }
 
 .breadcrumbs { position: fixed; top: 284px; left: 155px; z-index: 99; }
-.breadcrumbs .back.link { margin-left: 80px; }
+.breadcrumbs .back.link { margin-left: 58px; }
 
 .container { position: relative; z-index: 1; }
+
+.main { padding-right: 36px; }
 
 .schools { margin-right: -36px; margin-left: -36px; }
 .schools .schools__list { font-size: 0; overflow: hidden; }
@@ -274,7 +276,7 @@ button.btn { padding: 0 24px 0 27px; }
 
 .tag { position: relative; font-size: 0; z-index: 9; }
 .tag.tag_top { margin-bottom: 58px; }
-.tag a { display: inline-block; vertical-align: middle; margin-left: 50px; max-width: 120px; font-size: 12px; font-family: "HelveticaNeueCyrBold"; text-transform: uppercase; letter-spacing: 2px; color: #333; -moz-transition: color 300ms; -o-transition: color 300ms; -webkit-transition: color 300ms; transition: color 300ms; }
+.tag a { display: inline-block; vertical-align: middle; max-width: 120px; font-size: 12px; font-family: "HelveticaNeueCyrBold"; text-transform: uppercase; letter-spacing: 2px; color: #333; -moz-transition: color 300ms; -o-transition: color 300ms; -webkit-transition: color 300ms; transition: color 300ms; }
 .tag a:hover { color: #ab004e; }
 
 .plus-list li { position: relative; padding-left: 8.333%; margin-bottom: 12px; }

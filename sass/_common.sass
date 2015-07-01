@@ -21,7 +21,10 @@ body
 	font-size: 14px 
 	line-height: 1.4
 	color: #333
-		 
+	opacity: 0
+	+tr(opacity 300ms)
+	&.scroll-inited
+		opacity: 1 	 
 
 // common blocks      
 .link
@@ -32,6 +35,7 @@ body
 	text-transform: uppercase
 	color: #333
 	letter-spacing: 2px
+	+nosel
 	&:before
 		content: ""
 		position: absolute
@@ -104,6 +108,7 @@ body
 	+clr
 	color: #333
 	margin-left: 80px
+	+nosel
 	&:hover
 		.arrow
 			width: 80px

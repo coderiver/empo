@@ -9,9 +9,10 @@
 	top: 0
 	left: 0
 	right: 12px
-	min-width: 1280px
 	padding: 36px 44px 0 36px
 	z-index: 99
+	+r(1280)
+		min-width: 1268px
 	.header__tools
 		position: relative
 		padding-right: 4px
@@ -42,6 +43,7 @@
 	position: relative
 	top: -6px
 	padding-left: 20px 
+	+nosel
 	z-index: 99								
 	a
 		position: relative
@@ -62,6 +64,7 @@
 	position: fixed
 	top: 284px
 	left: 155px
+	+nosel
 	z-index: 99
 	.back.link
 		margin-left: 58px
@@ -435,7 +438,6 @@
 	a
 		display: inline-block
 		vertical-align: middle
-		//margin-left: 50px
 		max-width: 120px
 		font-size: 12px
 		+hb
@@ -445,6 +447,8 @@
 		+tr(color 300ms)
 		&:hover
 			color: $hover
+	.circle, .square	
+		margin-right: 50px	
 .plus-list
 	li
 		position: relative
@@ -525,15 +529,6 @@
 .submenu
 	position: relative
 	margin-bottom: 60px
-	// .submenu__line
-	// 	position: absolute
-	// 	top: 0
-	// 	left: -100px
-	// 	width: 70px
-	// 	height: 1px
-	// 	margin-top: 8px
-	// 	background: #333  
-	// 	+tr(top 300ms)
 	ul
 		li
 			margin-bottom: 20px
@@ -557,8 +552,8 @@
 		width: 46px
 		&.is-fixed
 			position: fixed
-			right: 56px
-			top: 120px
+			right: 84px
+			top: 180px
 		a
 			margin: 0 15px 10px
 	&.share_big
@@ -570,6 +565,7 @@
 	span, a
 		display: inline-block
 		vertical-align: middle
+		+nosel
 	& > span
 		margin-right: 20px
 		font-size: 10px
@@ -596,7 +592,8 @@
 	.about__video
 		position: relative
 		float: right
-		width: 80%
+		width: 640px
+		margin-right: -60px
 		z-index: 1
 	.about__content
 		position: absolute

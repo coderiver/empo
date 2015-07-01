@@ -89,7 +89,12 @@ head.ready(function() {
 				axis: 'x',
 				advanced:{ autoExpandHorizontalScroll:true
 				},
-				mouseWheel:{ preventDefault: true }
+				mouseWheel:{ preventDefault: true },
+				callbacks: {
+					onInit: function(){
+						$('body').addClass('scroll-inited');
+					}
+				}
 			});
 		});
 		
@@ -113,6 +118,7 @@ head.ready(function() {
 
 				    	if (scrollPlus >= 600 && $('.js-fixed-share').length) {
 				    		$('.js-fixed-share').addClass('is-fixed');
+				    		console.log('start fixing');
 				    	}
 				    	else {
 				    		$('.js-fixed-share').removeClass('is-fixed');
@@ -140,8 +146,8 @@ head.ready(function() {
 		var viewportWidth = $(window).width(),
 			pl = (viewportWidth - 56)/4;
 		var minusPl = '-' + pl + 'px',
-			schoolPl = (pl - 96) + 'px',
-			eventPl = (pl + 55) + 'px';
+			schoolPl = (pl - 120) + 'px',
+			eventPl = (pl + 31) + 'px';
 		
 		
 		$('.js-hor-scroll').css('margin-left', minusPl);

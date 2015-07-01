@@ -89,12 +89,7 @@ head.ready(function() {
 				axis: 'x',
 				advanced:{ autoExpandHorizontalScroll:true
 				},
-				mouseWheel:{ preventDefault: true },
-				callbacks: {
-					onInit: function(){
-						$('body').addClass('scroll-inited');
-					}
-				}
+				mouseWheel:{ preventDefault: true }
 			});
 		});
 		
@@ -103,7 +98,6 @@ head.ready(function() {
 				theme:"dark-2",
 				callbacks:{
 					onInit: function() {
-						$('.body-scroll').addClass('scroll-inited');
 						if ($('.js-section').length) {
 		    				$('.js-section').each(function() {
 		    					var top = $(this).offset().top;
@@ -136,9 +130,11 @@ head.ready(function() {
 				}
 			});
 		}
-		if ($(window).width() > 1024) {
+		if ($(window).width() >= 1280) {
 			bodyScrollInit();
 		};
+		
+		$('body').addClass('is-loaded');
 		            
 	});
 

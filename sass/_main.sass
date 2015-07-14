@@ -610,6 +610,7 @@
 	counter-reset: list
 	li
 		position: relative
+		color: #333
 		&:before							
 			content: '0'counter(list)
 			counter-increment: list
@@ -1279,14 +1280,33 @@
 					height: 40%
 	.list-counter
 		li
-			margin-bottom: 20px				
+			margin-bottom: 20px
+	& > section
+		display: inline-block
+		width: 87.5%
+		margin-bottom: 110px
+	h2
+		margin-top: 50px
+		margin-bottom: 80px
+		font-size: 16px
+		color: #333
+		text-transform: uppercase
+		letter-spacing: 2px
+		max-width: 150px
+	.img
+		width: 100%
+	.quote
+		width: 100%
+		margin-left: 0
+		margin-bottom: 50px 
+			 						
 .content
 	.section
 		width: 87.5%
 	.content__title
 		position: relative
-		width: 87.5%	
-		margin-bottom: 110px
+		color: #333	
+		margin-bottom: 50px
 		font-size: 30px
 		+hb
 		&:before
@@ -1351,6 +1371,7 @@
 		margin-bottom: 35px
 		font-size: 30px
 		+hb
+		color: #333
 		line-height: 1.2
 		&:before
 			content: "+"
@@ -1364,9 +1385,9 @@
 // slider
 .slider-wrap
 	position: relative
-	margin-bottom: 110px
-	width: auto
-	margin-left: -37%
+	margin-bottom: 50px
+	//width: auto
+	//margin-left: -37%
 .slider
 	width: 100% 
 	.slider__prev
@@ -1394,6 +1415,7 @@
 			height: 1px
 			background: $hover  		   		  				 				
 .quote
+	display: block
 	width: 87.5% 
 	margin-bottom: 110px 
 	margin-left: -6.75% 
